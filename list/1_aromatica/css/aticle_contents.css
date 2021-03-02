@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+.quick li a{color: #515151;}/*퀵 버튼 컬러*/
+
+/**** PAGE1 ****/
+#page1{width:42%; height:125px; margin:0px auto 220px auto; padding-top:200px;}
+#page1 p:first-child img{float:left; }/*"*/
+#page1 h1{clear:both; text-align:center; font-size:48px; font-weight:bold; line-height:1.7em; color:#545252;}/*아로마티카가...*/
+#page1 p:last-child img{float:right; }/*"*/
+
+/**** PAGE2 ****/
+#page2{width:80%; height:690px; border:0.5px solid #b7b7b7; margin:0 auto; margin-bottom:204px;}
+
+#page2_le{width:719px; float:left; margin-top:80px; margin-left:70px; }
+#page2_le p span:first-child{float:left;}/*#051*/
+#page2_le p span:last-child{float:right;}/*[Acology]*/
+#page2_le img{padding-top:10px; }/*이미지*/
+#page2_le p:last-child{float:right;}/*#Acologist*/
+
+#page2_ri{float:right; margin-top:154px; margin-right:60px;}
+#page2_ri h2{font-size:30px; font-weight:bold; padding-bottom:62px; }/*Activists...*/
+#page2_ri p{font-size:20px; margin-bottom:140px; line-height:1.7em;}/*분명 다르지만,...*/
+#page2_btn{width:164px; height:64px; cursor:pointer; outline:none; background-color:#ffffff; font-size:20px; border:1px solid #a1a1a1; transition:all 0.3s; }/*자세히보기*/
+#page2_btn:hover{box-shadow:inset 0 -64px 0 0 #05535a; color:#ffffff; font-weight:bold;}
+
+
+/**** PAGE3 ****/
+#page3{max-width:75%; margin:0 auto; text-align:center; }
+
+#ati_line1, #ati_line2, #ati_line3{height:556px;  margin-bottom:140px;}
+
+.ati_1{width:442px; float:left; }
+.ati_1 p:first-child{padding-bottom:25px;  }/*#000 []*/
+.ati_1 p span:first-child{float:left;}/*#050*/
+.ati_1 p span:last-child{float:right;}/*[aromatice]*/
+.ati_1 p img{border-top:1px solid #4a4949; padding-top:10px; padding-bottom:24px; }
+.ati_1 p:nth-child(3){font-size:18px; font-weight:bold; padding-bottom:24px; }/*아티클 제목*/
+.ati_1 p:nth-child(4){font-size:14px; font-style:italic; padding-bottom:40px; font-weight:lighter;}/*#아티클 태그*/
+
+
+.ati_2{width:442px; float:left; margin-left:66px; }
+.ati_2 p:first-child{padding-bottom:25px;}/*#000 []*/
+.ati_2 p span:first-child{float:left;}/*#049*/
+.ati_2 p span:last-child{float:right;}/*[aromatice]*/
+.ati_2 p img{border-top:1px solid #4a4949; padding-top:10px; padding-bottom:24px; }
+.ati_2 p:nth-child(3){font-size:18px; font-weight:bold; padding-bottom:24px; }/*아티클 제목*/
+.ati_2 p:nth-child(4){font-size:14px; font-style:italic; padding-bottom:40px; font-weight:lighter;}/*#아티클 태그*/
+
+
+.ati_3{width:442px; float:right;}
+.ati_3 p:first-child{padding-bottom:25px;}/*#000 []*/
+.ati_3 p span:first-child{float:left;}/*#049*/
+.ati_3 p span:last-child{float:right;}/*[aromatice]*/
+.ati_3 p img{border-top:1px solid #4a4949; padding-top:10px; padding-bottom:24px; }
+.ati_3 p:nth-child(3){font-size:18px; font-weight:bold; padding-bottom:24px; }/*아티클 제목*/
+.ati_3 p:nth-child(4){font-size:14px; font-style:italic; padding-bottom:40px; font-weight:lighter;}/*#아티클 태그*/
+
+
+/*****    ati_line2    *******/
+
+.ati_4{width:442px; float:left; }
+.ati_4 p:first-child{padding-bottom:25px;}/*#000 []*/
+.ati_4 p span:first-child{float:left;}/*#049*/
+.ati_4 p span:last-child{float:right;}/*[aromatice]*/
+.ati_4 p img{border-top:1px solid #4a4949; padding-top:10px; padding-bottom:24px; }
+.ati_4 p:nth-child(3){font-size:18px; font-weight:bold; padding-bottom:24px; }/*아티클 제목*/
+.ati_4 p:nth-child(4){font-size:14px; font-style:italic; padding-bottom:40px; font-weight:lighter;}/*#아티클 태그*/
+
+
+.ati_5{width:442px; float:left; margin-left:66px; }
+.ati_5 p:first-child{padding-bottom:25px;}/*#000 []*/
+.ati_5 p span:first-child{float:left;}/*#049*/
+.ati_5 p span:last-child{float:right;}/*[aromatice]*/
+.ati_5 p img{border-top:1px solid #4a4949; padding-top:10px; padding-bottom:24px; }
+.ati_5 p:nth-child(3){font-size:18px; font-weight:bold; padding-bottom:24px; }/*아티클 제목*/
+.ati_5 p:nth-child(4){font-size:14px; font-style:italic; padding-bottom:40px; font-weight:lighter;}/*#아티클 태그*/
+
+
+.ati_6{width:442px; float:right;}
+.ati_6 p:first-child{padding-bottom:25px;}/*#000 []*/
+.ati_6 p span:first-child{float:left;}/*#049*/
+.ati_6 p span:last-child{float:right;}/*[aromatice]*/
+.ati_6 p img{border-top:1px solid #4a4949; padding-top:10px; padding-bottom:24px; }
+.ati_6 p:nth-child(3){font-size:18px; font-weight:bold; padding-bottom:24px; }/*아티클 제목*/
+.ati_6 p:nth-child(4){font-size:14px; font-style:italic; padding-bottom:40px; font-weight:lighter;}/*#아티클 태그*/
+
+
+
+/******    aci_line3     ******/
+
+.ati_7{width:442px; float:left; }
+.ati_7 p:first-child{padding-bottom:25px;}/*#000 []*/
+.ati_7 p span:first-child{float:left;}/*#049*/
+.ati_7 p span:last-child{float:right;}/*[aromatice]*/
+.ati_7 p img{border-top:1px solid #4a4949; padding-top:10px; padding-bottom:24px; }
+.ati_7 p:nth-child(3){font-size:18px; font-weight:bold; padding-bottom:24px; }/*아티클 제목*/
+.ati_7 p:nth-child(4){font-size:14px; font-style:italic; padding-bottom:40px; font-weight:lighter;}/*#아티클 태그*/
+
+
+.ati_8{width:442px; float:left; margin-left:66px; }
+.ati_8 p:first-child{padding-bottom:25px;}/*#000 []*/
+.ati_8 p span:first-child{float:left;}/*#049*/
+.ati_8 p span:last-child{float:right;}/*[aromatice]*/
+.ati_8 p img{border-top:1px solid #4a4949; padding-top:10px; padding-bottom:24px; }
+.ati_8 p:nth-child(3){font-size:18px; font-weight:bold; padding-bottom:24px; }/*아티클 제목*/
+.ati_8 p:nth-child(4){font-size:14px; font-style:italic; padding-bottom:40px; font-weight:lighter;}/*#아티클 태그*/
+
+
+.ati_9{width:442px; float:right;}
+.ati_9 p:first-child{padding-bottom:25px;}/*#000 []*/
+.ati_9 p span:first-child{float:left;}/*#049*/
+.ati_9 p span:last-child{float:right;}/*[aromatice]*/
+.ati_9 p img{border-top:1px solid #4a4949; padding-top:10px; padding-bottom:24px; }
+.ati_9 p:nth-child(3){font-size:18px; font-weight:bold; padding-bottom:24px; }/*아티클 제목*/
+.ati_9 p:nth-child(4){font-size:14px; font-style:italic; padding-bottom:40px; font-weight:lighter;}/*#아티클 태그*/
+
+
+.btn2:hover, .btn2:focus{box-shadow:inset -60px 0 0 0 #333333,inset 60px 0 0 0 #333333;  }
+.btn2:hover, .btn2:focus{color:#000000; }
+.btn2{color:#000000; border-top:1px solid #000000;  border-bottom:1px solid #000000;   background:none;  font-size:14px; text-align:center;  width:442px; height:44px; outline:none; cursor:pointer; transition:all 0.3s; line-height:3em;}/*VIEW 버튼*/
+
+
+.btn2:hover, .btn2:focus{box-shadow:inset -221px 0 0 0 #05535a,inset 221px 0 0 0 #05535a; color:#ffffff; border:none; font-weight:bold; }
+

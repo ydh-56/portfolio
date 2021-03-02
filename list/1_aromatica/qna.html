@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>아로마티카 (리뉴얼)</title>
+     <!--[if lt IE 9]>   
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+   <script src="js/jquery-1.12.4.min.js"></script>
+ <script src="js/jquery-1.8.3.min.js"></script>
+ <script src="js/top.js"></script>
+  <script src="js/qna.js"></script>
+   <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/qna_layout.css">
+</head>
+<body>
+  <section class="header">
+     <header id="header">
+       <div id="top0_box">
+               <label for="country" class="coun_h">언어</label>
+                <select id="country">
+            <option value="KOREA">KOREA</option>
+            <option value="ENGLISH">ENGLISH</option>
+            <option value="JAPANESE">JAPANESE</option>
+            <option value="CHINESE">CHINESE</option>
+        </select>
+           </div><!--top0_box 언어-->
+            
+            
+           <div id="top1_box"> 
+            <div id="top1">
+              <ul class="quick">
+                  <li><a href="login.html">로그인</a></li>
+                  <li><a href="join.html">회원가입</a></li>
+                  <li><a href="#">장바구니(0)</a></li>
+              </ul><!--quick-->
+            </div> <!--top1_box-->
+        </div><!--top1-->
+            
+         <div id="top2_box"> 
+           <h1 class="logo">
+                    <a href="index.html"><img src="img/index/logo.png" alt="aromatica" width="293" height="36"></a>
+                </h1><!--logo-->   
+            <div id="top2">
+            <nav id="top_navi">
+                <ul id="menu">
+                    <li><a href="skin.html">쇼핑</a>
+                        <ul class="submenu1">
+                            <li><a href="shopping.html">스킨 케어</a>
+                                <ul class="submenu2">
+                                    <li><a href="#">클렌저</a></li>
+                                    <li><a href="#">토너 &middot; 세럼</a></li>
+                                    <li><a href="#">수딩젤 &middot; 크림</a></li>
+                                    <li><a href="#">로션 &middot; 크림</a></li>
+                                    <li><a href="#">페이셜오일 &middot; 스팟</a></li>
+                                    <li><a href="#">마스크 &middot; 립</a></li>
+                                    <li><a href="#">썬 &middot; 에프터썬</a></li>
+                                </ul><!--submenu2-->
+                            </li>
+                            <li><a href="#">헤어 케어</a>
+                                <ul class="submenu2">
+                                    <li><a href="#">샴푸</a></li>
+                                    <li><a href="#">헤어트리트먼트</a></li>
+                                    <li><a href="#">두피토닉 &middot; 스크럽</a></li>
+                                </ul><!--submenu2-->
+                            </li>
+                            <li><a href="#">핸드.바디</a>
+                                <ul class="submenu2">
+                                    <li><a href="#">바디워시 &middot; 로션</a></li>
+                                    <li><a href="#">바디오일</a></li>
+                                    <li><a href="#">핸드 케어</a></li>
+                                </ul><!--submenu2-->
+                            </li>
+                            <li><a href="#">아로마테라피</a>
+                                <ul class="submenu2">
+                                    <li><a href="#">에센셜 오일</a></li>
+                                    <li><a href="#">롤온 &middot; 미스트</a></li>
+                                </ul><!--submenu2-->
+                            </li>
+                            <li><a href="#">라이프 케어</a>
+                                <ul class="submenu2">
+                                    <li><a href="#">치약 &middot; 칫솔 &middot; 펫샴푸</a></li>
+                                    <li><a href="#">주방 세제</a></li>
+                                    <li><a href="#">살균 &middot; 소독제</a></li>
+                                    <li><a href="#">여성청결제</a></li>
+                                </ul><!--submenu2-->
+                            </li>
+                            <li><a href="#">액세서리</a>
+                                <ul class="submenu2">
+                                    <li><a href="#">브랜드 굿즈</a></li>
+                                    <li><a href="#">뷰티 툴즈</a></li>
+                                </ul><!--submenu2-->
+                            </li>
+                        </ul><!--submenu1-->
+                    </li>
+                    <li><a href="story.html">스토리</a>
+                        <ul class="submenu1">
+                            <li><a href="#">브랜드 소개</a></li>
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">브랜드 발자취</a></li>
+                            <li><a href="#">브랜드 진정성</a></li>
+                            <li><a href="#">오프라인 매장</a></li>
+                        </ul><!--submenu1-->
+                    </li>
+                    <li><a href="mission.html">미션</a>
+                        <ul class="submenu1">
+                            <li><a href="#">미션</a></li>
+                            <li><a href="#">지속 가능성</a></li>
+                            <li><a href="#">선한 영향력</a></li>
+                            <li><a href="#">클린 뷰티 기준서</a></li>
+                            <li><a href="#">지속가능 패키지 기준서</a></li>
+                        </ul><!--submenu1-->
+                    </li>
+                    <li><a href="qna.html">묻고 답하기</a>
+                        <ul class="submenu1">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">문의</a></li>
+                            <li><a href="#">제안해 주세요</a></li>
+                            <li><a href="#">제품 리뷰</a></li>
+                        </ul><!--submenu1-->
+                    </li>
+                    <li><a href="aticle.html">아티클</a>
+                        <ul class="submenu1">
+                            <li><a href="#">지속 가능한 환경</a></li>
+                            <li><a href="#">지속 가능한 뷰티</a></li>
+                            <li><a href="#">지속 가능한 원료</a></li>
+                        </ul><!--submenu1-->
+                    </li>
+                </ul><!--menu-->
+            </nav><!--top2-->
+            </div><!--top2-->
+        </div> <!--top2_box-->
+    </header><!--top_wrap-->
+    </section>
+    <div id="top_scroll"><p>TOP</p></div>
+    
+    <div id="page1">
+       <div class="page1">
+        <h2>070-4206-4214</h2> 
+        <p>10 : 00 ~ 18 : 00 <br>
+점심시간 13 : 00 ~ 14:00 <br>
+토, 일 및 공휴일 휴무</p>
+        </div><!--page1.-->
+    </div><!--page1-->
+    
+    
+    <div id="page2">
+        <div class="page2_1">
+           <h3>QNA</h3>
+            <div>
+                <p>자주 묻는 질문을 <br>FAQ에서 검색하세요.</p>
+            </div>
+            <div>
+                <p>아로마티카 사이트 이용과 <br>피부고민까지 상담해드립니다.</p>
+            </div>
+            <div>
+                <p>적립금 사용법과 회원등급별 <br>혜택에 대해 안내해 드립니다.</p>
+            </div>
+            <div>
+                <p>쉽고 바른 검색으로 아로마티카 <br>
+매장을 찾아 보실 수 있습니다.</p>
+            </div>
+        </div><!--page2_1-->
+    </div><!--page2-->
+    
+    
+    <div id="page3">
+    <div class="page3">
+     <div id="table1">
+        <h4>아로마티카 공지사항</h4>
+        <table id="bbs">
+            <caption>더보기+</caption>
+            <thead>
+                <tr>
+                    <th scope="col" id="u_no">번호</th>
+                    <th scope="col" id="u_tit">제목</th>
+                    <th scope="col" id="u_data">작성일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="txt">게시판 공지사항 입니다.</td>
+                    <td>2020-09-25</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="txt">게시판 내용 입니다.</td>
+                    <td>2020-07-28</td>
+                </tr>
+                <tr>
+                    <td>119</td>
+                    <td class="txt">[공지] 택배 없는 날 배송 관련 안내</td>
+                    <td>2020-08-12</td>
+                </tr>
+                <tr>
+                    <td>118</td>
+                    <td class="txt">[공지] '우리 아이가 달라졌어요!' 이벤트 당첨자 안내</td>
+                    <td>2020-07-22</td>
+                </tr>
+                <tr>
+                    <td>117</td>
+                    <td class="txt">[공지] 아로마티카 고객 설문 EVENT (~4/17)</td>
+                    <td>2020-04-09</td>
+                </tr>
+                <tr>
+                    <td>116</td>
+                    <td class="txt">[공지] 단종 예정 상품 안내</td>
+                    <td>2020-03-09</td>
+                </tr>
+                <tr>
+                    <td>115</td>
+                    <td class="txt">[공지] #OFFTHEPLASTIC Talks 에 초대합니다!</td>
+                    <td>2020-02-03</td>
+                </tr>
+                <tr>
+                    <td>114</td>
+                    <td class="txt">[공지] 2020년 2월 멤버십 변경 안내</td>
+                    <td>2020-01-30</td>
+                </tr>
+                <tr>
+                    <td>113</td>
+                    <td class="txt">[공지] 11-12월 베스트 리뷰어 선정</td>
+                    <td>2020-01-16</td>
+                </tr>
+                <tr>
+                    <td>112</td>
+                    <td class="txt">[공지] 설 연휴 전후 배송관련 안내</td>
+                    <td>2020-01-16</td>
+                </tr>
+                
+            </tbody>
+         </table>
+        </div><!--table-->
+         
+    
+    <div id="page3_r">
+       <div>
+        <ul>
+            <li>아로마티카 실시간 1:1 메신저 상담</li>
+            <li>상담시간 오전 9:00 ~ 오후 06:00 (주말/공휴일은 휴무)</li>
+            <li>점심시간 오후 12:00 ~ 오후 01:00</li>
+        </ul>
+        <ul>
+            <li><img src="img/qna/3p_icon1.png" alt="문자" width="100" height="100"></li>
+            <li><img src="img/qna/3p_icon2.png" alt="메세지" width="100" height="100"></li>
+            <li><img src="img/qna/3p_icon3.png" alt="전화" width="100" height="100"></li>
+        </ul>
+        <ul>
+            <li>고객만족센터 : 1600 - 3689</li>
+            <li>* 운영시간에 상담이 몰릴 경우 답변이 조금 늦어질 수 있습니다.</li>
+            <li>고객님의 양해 부탁드립니다.</li>
+        </ul>
+        </div>
+    </div>
+</div>
+    </div><!--page3-->
+    
+    <div id="page4">
+        
+        <div class="page4">
+           <div class="list2">
+            <h5>QnA</h5>
+            <p>고객님들이 가장 궁금해 하신 질문들만 모아봤어요.</p>
+           </div> <!--3-->
+            <div class="list3">
+                <h6>주문 / 결제</h6>
+                <p>품절된 제품 알림은 <br> 어떻게 받나요?</p>
+            </div>
+            <div class="list3">
+                <h6>주문 / 결제</h6>
+                <p>현금영수증 발급은 어떻게 <br> 하나요?</p>
+            </div>
+            <div class="list3">
+                <h6>제품 관련</h6>
+                <p>제품이 얼어서 왔는데 <br> 사용해도 되나요?</p>
+            </div>
+            <div class="list3">
+                <h6>제품 관련</h6>
+                <p>비건 제품(식물 성분 제품)을 <br> 찾고있어요!</p>
+            </div>
+            <div class="list3">
+                <h6>교환 / 환불 / 반품</h6>
+                <p>배송지를 잘못 입력했어요! <br> 수정은 어떻게 하나요?</p>
+            </div>
+            <div class="list3">
+                <h6>교환 / 환불 / 반품</h6>
+                <p>주문했는데 취소하고 싶어요!</p>
+            </div>
+            <div class="list3">
+                <h6>배송 관련</h6>
+                <p>배송지를 잘못 입력했어요! <br> 수정은 어떻게 하나요?</p>
+            </div>
+            <div class="list3">
+                <h6>회원 정보 / 멤버십</h6>
+                <p>멤버십 등급은 어떻게 산정 <br> 되나요? 기준은 뭐예요?</p>
+            </div>
+            <div class="list3">
+                <h6>사은품 / 포인트 / 쿠폰</h6>
+                <p>사은품/포인트/쿠폰 <br> 포인트와 쿠폰을 동시에 <br> 사용할 수 있나요?</p>
+            </div>
+            <div class="list3">
+                <h6>기타</h6>
+                <p>오프라인 어디서 구매할 <br> 수 있나요?</p>
+            </div>
+            
+            
+            
+            
+        </div><!--page4/-->
+        
+        
+    </div><!--page4-->
+
+    
+     <!--****  bottom  ****-->
+    <div id="bottom">
+        <div class="bottom">
+            <div class="bottom_l">
+                <p>AROMATICA</p>
+                <p>COMPANY : (주) 아로마티카 <br>
+REPRESENTATIVE : Jerry Kim<br>
+ADDRESS : 서울 강남구 도산대로 1길 62 3층 <br>
+CORPORATE BISINESS NUMBER : 214-86-75782 [사업자정보확인]<br>
+ONLINE BUSINESS NUMBER : 2018-서울강남-00761<br>
+© Copyright 아로마티카 All rights reserved. In God we trust.</p>
+            </div><!--bottom_l-->
+            <div class="bottom_c">
+                <p>CS CENTER</p>
+                <p>070-4206-4214</p>
+                <p>OPEN : AM 09:00 ~ PM 18:00 <br>
+BREAK : PM 12:00 ~ PM 13:00 (SAT, SUN, HOLIDAT OFF)</p>
+            </div><!--bottom_c-->
+            <div class="bottom_r">
+                <p>INSTAGRAM <span>@aromatica.official</span></p>
+                <img src="img/bottom/insta1.png" alt="sns1" width="75" height="75">
+                <img src="img/bottom/insta2.png" alt="sns2" width="75" height="75">
+                <img src="img/bottom/insta3.png" alt="sns3" width="75" height="75"> <br>
+                <img src="img/bottom/insta4.png" alt="sns4" width="75" height="75">
+                <img src="img/bottom/insta5.png" alt="sns5" width="75" height="75">
+                <img src="img/bottom/insta6.png" alt="sns6" width="75" height="75">
+            </div><!--bottom_r-->
+        </div><!--bottom..-->
+    </div><!--bottom-->
+    
+</body>
+</html>

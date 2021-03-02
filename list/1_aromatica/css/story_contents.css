@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+
+@keyframes brand{
+    0%{
+       opacity: 0; 
+        transform: translateY(-20px); 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+}
+
+@keyframes brand_p{
+   0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+}
+
+
+/*본문*/
+/**** PAGE1 ****/
+#page1{
+    color:transparent;
+    width:100%; height:784px; overflow:hidden;
+     /* The image used */
+  background-image: url("../img/story/1_back2.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*페이지1*/
+
+
+/**** PAGE2 ****/
+.txt1{padding-left:322px; padding-bottom:390px; }
+#page2{margin-bottom:350px;}
+#page2 h2{padding-top:110px; font-size:48px; font-weight:bold;padding-bottom:74px;}/*Brand Persona*/
+#page2 p{font-size:16px; font-weight:lighter; line-height:2em;}/*브랜드의 네임 밸류나 ...*/
+
+.txt2{width:90%; height:515px; margin-bottom:230px;  float:right; position:relative;  }/*첫번째*/
+.txt2 img{float:right; position:absolute; right:0;}
+.txt2 h3{font-size:30px; font-weight:bold;  padding:60px 0 78px 50px; 
+}/*Brand Philosophy*/
+#page2 .txt2 p{font-size:16px; line-height:2.5em; padding-left:50px;  }/*AROMATICA는 지난...*/
+
+
+.txt3{width:90%; height:515px; margin-bottom:230px;  float:left; position:relative;}/*두번째*/
+.txt3 img{float:left; position:absolute; left:0;}
+.txt3_1{float:right;}
+.txt3 h3{font-size:30px; font-weight:bold; float:right; padding:60px 50px 78px;  }/*Brand Statement*/
+#page2 .txt3 p{font-size:16px; line-height:2.5em; padding-right:50px; text-align:right; }/*생명 존중과 환경 ...*/
+
+
+.txt4{width:90%; height:515px; margin-bottom:230px;  float:right; position:relative;}/*세번째*/
+.txt4 img{float:right; position:absolute; right:0;}
+.txt4 h3{font-size:30px; font-weight:bold;  padding:60px 0 78px 50px;}/*Brand Tagline*/
+#page2 .txt4 p{font-size:16px; line-height:2.5em; padding-left:50px; } /*True Botanical Remedy ...*/
+
+/*애니메이션*/
+.txt1 h2{
+    transform:translateY(0px);
+    animation:brand 2s 1;
+}
+
+.txt1 p{transform:translateY(0px);   
+    animation:brand_p 2s 1;
+}
+
+/*.txt2 h3:hover{text-decoration:underline; }*/
+
+/*height span*/
+.height span{position:relative; }/*형광*/
+
+.height{display:inline-table; position:relative; overflow:hidden;}/*하이라이트*/
+
+.height::before{
+    content:' ';
+    display:block;
+    width:100%;
+    height:100%;
+    background:rgba(246,249,150,.5);
+    position:absolute;
+    top:0;
+    left:-100%;
+    transition:all .35s;
+}
+.txt2:hover .height::before{left:0;}
+.txt3:hover .height::before{left:0;}
+.txt4:hover .height::before{left:0;}
+
+
+
+/**/
+.underline{position:relative;}/*밑*/
+.underline:after {
+	content: '';
+  position: absolute;
+  left: 23px;
+  display: inline-block;
+  height: 1em;
+  width: 250px;
+  border-bottom: 1px solid;
+    margin-left:25px;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+.txt4 underline:after{width:200px;}
+
+.txt2:hover .underline:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+.txt3:hover .underline:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+.txt4:hover .underline:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

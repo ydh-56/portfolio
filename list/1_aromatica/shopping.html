@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>아로마티카 (리뉴얼)</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
+    <!--[if lt IE 9]>   
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/shopping.js"></script>
+    <script src="js/top.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/shopping_layout.css">
+</head>
+
+<body>
+    <section class="header">
+        <header id="header">
+            <div id="top0_box">
+                <label for="country" class="coun_h">언어</label>
+                <select id="country">
+                    <option value="KOREA">KOREA</option>
+                    <option value="ENGLISH">ENGLISH</option>
+                    <option value="JAPANESE">JAPANESE</option>
+                    <option value="CHINESE">CHINESE</option>
+                </select>
+            </div>
+            <!--top0_box 언어-->
+
+
+            <div id="top1_box">
+                <div id="top1">
+                    <ul class="quick">
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                        <li><a href="#">장바구니(0)</a></li>
+                    </ul>
+                    <!--quick-->
+                </div>
+                <!--top1_box-->
+            </div>
+            <!--top1-->
+
+            <div id="top2_box">
+                <h1 class="logo">
+                    <a href="index.html"><img src="img/index/logo.png" alt="aromatica" width="293" height="36"></a>
+                </h1>
+                <!--logo-->
+                <div id="top2">
+                    <nav id="top_navi">
+                        <ul id="menu">
+                            <li><a href="skin.html">쇼핑</a>
+                                <ul class="submenu1">
+                                    <li><a href="shopping.html">스킨 케어</a>
+                                        <ul class="submenu2">
+                                            <li><a href="#">클렌저</a></li>
+                                            <li><a href="#">토너 &middot; 세럼</a></li>
+                                            <li><a href="#">수딩젤 &middot; 크림</a></li>
+                                            <li><a href="#">로션 &middot; 크림</a></li>
+                                            <li><a href="#">페이셜오일 &middot; 스팟</a></li>
+                                            <li><a href="#">마스크 &middot; 립</a></li>
+                                            <li><a href="#">썬 &middot; 에프터썬</a></li>
+                                        </ul>
+                                        <!--submenu2-->
+                                    </li>
+                                    <li><a href="#">헤어 케어</a>
+                                        <ul class="submenu2">
+                                            <li><a href="#">샴푸</a></li>
+                                            <li><a href="#">헤어트리트먼트</a></li>
+                                            <li><a href="#">두피토닉 &middot; 스크럽</a></li>
+                                        </ul>
+                                        <!--submenu2-->
+                                    </li>
+                                    <li><a href="#">핸드.바디</a>
+                                        <ul class="submenu2">
+                                            <li><a href="#">바디워시 &middot; 로션</a></li>
+                                            <li><a href="#">바디오일</a></li>
+                                            <li><a href="#">핸드 케어</a></li>
+                                        </ul>
+                                        <!--submenu2-->
+                                    </li>
+                                    <li><a href="#">아로마테라피</a>
+                                        <ul class="submenu2">
+                                            <li><a href="#">에센셜 오일</a></li>
+                                            <li><a href="#">롤온 &middot; 미스트</a></li>
+                                        </ul>
+                                        <!--submenu2-->
+                                    </li>
+                                    <li><a href="#">라이프 케어</a>
+                                        <ul class="submenu2">
+                                            <li><a href="#">치약 &middot; 칫솔 &middot; 펫샴푸</a></li>
+                                            <li><a href="#">주방 세제</a></li>
+                                            <li><a href="#">살균 &middot; 소독제</a></li>
+                                            <li><a href="#">여성청결제</a></li>
+                                        </ul>
+                                        <!--submenu2-->
+                                    </li>
+                                    <li><a href="#">액세서리</a>
+                                        <ul class="submenu2">
+                                            <li><a href="#">브랜드 굿즈</a></li>
+                                            <li><a href="#">뷰티 툴즈</a></li>
+                                        </ul>
+                                        <!--submenu2-->
+                                    </li>
+                                </ul>
+                                <!--submenu1-->
+                            </li>
+                            <li><a href="story.html">스토리</a>
+                                <ul class="submenu1">
+                                    <li><a href="#">브랜드 소개</a></li>
+                                    <li><a href="#">브랜드 스토리</a></li>
+                                    <li><a href="#">브랜드 발자취</a></li>
+                                    <li><a href="#">브랜드 진정성</a></li>
+                                    <li><a href="#">오프라인 매장</a></li>
+                                </ul>
+                                <!--submenu1-->
+                            </li>
+                            <li><a href="mission.html">미션</a>
+                                <ul class="submenu1">
+                                    <li><a href="#">미션</a></li>
+                                    <li><a href="#">지속 가능성</a></li>
+                                    <li><a href="#">선한 영향력</a></li>
+                                    <li><a href="#">클린 뷰티 기준서</a></li>
+                                    <li><a href="#">지속가능 패키지 기준서</a></li>
+                                </ul>
+                                <!--submenu1-->
+                            </li>
+                            <li><a href="qna.html">묻고 답하기</a>
+                                <ul class="submenu1">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">자주 묻는 질문</a></li>
+                                    <li><a href="#">문의</a></li>
+                                    <li><a href="#">제안해 주세요</a></li>
+                                    <li><a href="#">제품 리뷰</a></li>
+                                </ul>
+                                <!--submenu1-->
+                            </li>
+                            <li><a href="aticle.html">아티클</a>
+                                <ul class="submenu1">
+                                    <li><a href="#">지속 가능한 환경</a></li>
+                                    <li><a href="#">지속 가능한 뷰티</a></li>
+                                    <li><a href="#">지속 가능한 원료</a></li>
+                                </ul>
+                                <!--submenu1-->
+                            </li>
+                        </ul>
+                        <!--menu-->
+                    </nav>
+                    <!--top2-->
+                </div>
+                <!--top2-->
+            </div>
+            <!--top2_box-->
+        </header>
+        <!--top_wrap-->
+    </section>
+    <div id="top_scroll">
+        <p>TOP</p>
+    </div>
+
+    <!--****  PAGE1  ****-->
+    <div id="page1">
+        <div class="img_wrap">
+            <figure id="aloe" class="on">
+                <img src="img/shopping/best_top.png" alt="유기농 알로에 베라 젤" width="169" height="427">
+                <figcaption>
+                    <h2>유기농 알로에 <br>베라 젤</h2>
+                    <p>메마른 피부에 끈적임 없이 수분을 채워줍니다. <br>
+                        얼굴과 바디에 빠르게 흡수되어 진정시켜 줄 거예요. <br>
+                        빠르고 끈적임 없이 촉촉한 피부를 느끼실 수 있어요.</p>
+                    <p>9,350won 300ml</p>
+                    <input type="button" class="btn_top" value="전성분 보기">
+                    <input type="button" class="btn_top" value="구매하러 가기">
+                </figcaption>
+            </figure>
+            <!--aloe-->
+
+            <figure id="rose">
+                <img src="img/shopping/best_top2.png" alt="리바이빙 로즈 인퓨전 크림 클렌저" width="129" height="394">
+                <figcaption>
+                    <h2>리바이빙 로즈 <br>인퓨전 크림 클렌저</h2>
+                    <p>메마른 피부에 끈적임 없이 수분을 채워줍니다. <br>
+                        얼굴과 바디에 빠르게 흡수되어 진정시켜 줄 거예요. <br>
+                        빠르고 끈적임 없이 촉촉한 피부를 느끼실 수 있어요.</p>
+                    <p>20,000won 145g</p>
+                    <input type="button" class="btn_top" value="전성분 보기">
+                    <input type="button" class="btn_top" value="구매하러 가기">
+                </figcaption>
+            </figure>
+            <!--rose-->
+        </div>
+        <!--img_wrap-->
+
+        <div id="btn_on">
+            <p class="on">버튼1</p>
+            <p>버튼2</p>
+        </div>
+        <!--btn_on-->
+    </div>
+    <!--page1-->
+
+    <!--*** PAGE2 ***-->
+    <div id="page2">
+        <div class="page2">
+            <div class="ph-dot-nav nav3">
+                <a href="#">전체</a>
+                <a href="#">클렌저</a>
+                <a href="#">토너</a>
+                <a href="#">크림</a>
+                <a href="#">썬</a>
+                <div class="effect"></div>
+            </div>
+            <!--p_menu-->
+            <div id="product1">
+
+                <figure class="pro_1 pro_0">
+                    <img src="img/shopping/p2_1.jpg" alt="포팅 칼렌듈라 디콕션 클렌징 무스" width="234" height="390" />
+                    <figcaption>
+                        <h2>컴포팅 칼렌듈라 디콕션 클렌징 무스<br><span>22000 WON</span></h2>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                    <!--pro_1-->
+                </figure>
+                <figure class="pro_1 pro_0">
+                    <img src="img/shopping/p2_2.jpg" alt="바이탈라이징 로즈마리 올인원 워시" width="234" height="390" />
+                    <figcaption>
+                        <h2>바이탈라이징 로즈마리 올인원 워시<br><span>18000 WON</span></h2>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                    <!--pro_1-->
+                </figure>
+                <figure class="pro_1 pro_0">
+                    <img src="img/shopping/p2_3.jpg" alt="리바이빙 로즈 인퓨전 크림 클렌저" width="234" height="390" />
+                    <figcaption>
+                        <h3>리바이빙 로즈 인퓨전 크림 클렌저<br><span>20000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_1 pro_0">
+                    <img src="img/shopping/p2_4.jpg" alt="티트리 밸런싱 포밍 클렌저" width="234" height="390" />
+                    <figcaption>
+                        <h3>티트리 밸런싱 포밍 클렌저<br><span>18000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_1 pro_0">
+                    <img src="img/shopping/p2_5.jpg" alt="내추럴 코코넛 클렌징 오일" width="234" height="390" />
+                    <figcaption>
+                        <h3>내추럴 코코넛 클렌징 오일<br><span>33000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_1 pro_0">
+                    <img src="img/shopping/p2_6.jpg" alt="오렌지 클렌징 샤베트" width="234" height="390" />
+                    <figcaption>
+                        <h3>오렌지 클렌징 샤베트<br><span>30000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_2 pro_4 pro_0">
+                    <img src="img/shopping/p2_7.jpg" alt="스킨케어 베스트 트리오 세트" width="234" height="390" />
+                    <figcaption>
+                        <h3>스킨케어 베스트 트리오 세트<br><span>35400 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_2 pro_0">
+                    <img src="img/shopping/p2_8.jpg" alt="리바이빙 로즈 트리트먼트 토너" width="234" height="390" />
+                    <figcaption>
+                        <h3>리바이빙 로즈 트리트먼트 토너<br><span>35000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_2 pro_0">
+                    <img src="img/shopping/p2_9.jpg" alt="티트리 밸런싱 토너" width="234" height="390" />
+                    <figcaption>
+                        <h3>티트리 밸런싱 토너<br><span>27000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_2 pro_0">
+                    <img src="img/shopping/p2_10.jpg" alt="바이탈라이징 로즈마리 디콕션 토너" width="234" height="390" />
+                    <figcaption>
+                        <h3>바이탈라이징 로즈마리 디콕션 토너<br><span>20000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_2 pro_0">
+                    <img src="img/shopping/p2_11.jpg" alt="바이탈라이징 로즈마리 에센스" width="234" height="390" />
+                    <figcaption>
+                        <h3>바이탈라이징 로즈마리 에센스<br><span>38000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_2 pro_0">
+                    <img src="img/shopping/p2_12.jpg" alt="리바이빙 로즈 인퓨전 세럼" width="234" height="390" />
+                    <figcaption>
+                        <h3>리바이빙 로즈 인퓨전 세럼<br><span>35000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_3 pro_0">
+                    <img src="img/shopping/p2_13.jpg" alt="티트리 밸런싱 에멀전" width="234" height="390" />
+                    <figcaption>
+                        <h3>티트리 밸런싱 에멀전<br><span>29000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_3 pro_0">
+                    <img src="img/shopping/p2_14.jpg" alt="컴포팅 칼렌듈라 디콕션 밤" width="234" height="390" />
+                    <figcaption>
+                        <h3>컴포팅 칼렌듈라 디콕션 밤<br><span>12000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_3 pro_0">
+                    <img src="img/shopping/p2_15.jpg" alt="컴포팅 칼렌듈라 디콕션 쥬시크림" width="234" height="390" />
+                    <figcaption>
+                        <h3>컴포팅 칼렌듈라 디콕션 쥬시크림<br><span>28000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_3 pro_0">
+                    <img src="img/shopping/p2_16.jpg" alt="컴포팅 칼렌듈라 인텐시브 크림" width="234" height="390" />
+                    <figcaption>
+                        <h3>컴포팅 칼렌듈라 인텐시브 크림<br><span>26000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_3 pro_0">
+                    <img src="img/shopping/p2_17.jpg" alt="수딩 알로에 아쿠아 크림" width="234" height="390" />
+                    <figcaption>
+                        <h3>수딩 알로에 아쿠아 크림<br><span>16000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_3 pro_0">
+                    <img src="img/shopping/p2_18.jpg" alt="리바이빙 로즈 인퓨전 크림" width="234" height="390" />
+                    <figcaption>
+                        <h3>리바이빙 로즈 인퓨전 크림<br><span>45000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_4 pro_0">
+                    <img src="img/shopping/p2_19.jpg" alt="유기농 로즈힙 오일" width="234" height="390" />
+                    <figcaption>
+                        <h3>유기농 로즈힙 오일<br><span>25000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_4 pro_0">
+                    <img src="img/shopping/p2_20.jpg" alt="티트리 그린 오일" width="234" height="390" />
+                    <figcaption>
+                        <h3>티트리 그린 오일<br><span>25000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_4 pro_0">
+                    <img src="img/shopping/p2_21.jpg" alt="유기농 골든 호호바 오일" width="234" height="390" />
+                    <figcaption>
+                        <h3>유기농 골든 호호바 오일<br><span>25000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_4 pro_0">
+                    <img src="img/shopping/p2_22.jpg" alt="유기농 네롤리 브라이트닝 오일" width="234" height="390" />
+                    <figcaption>
+                        <h3>유기농 네롤리 브라이트닝 오일<br><span>25000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+                <figure class="pro_4 pro_0">
+                    <img src="img/shopping/p2_23.jpg" alt="티트리 53 블레미쉬 스팟" width="234" height="390" />
+                    <figcaption>
+                        <h3>티트리 53 블레미쉬 스팟<br><span>13000 WON</span></h3>
+                        <p class="img_h"><img src="img/shopping/2p_h1.png" alt="하트" width="20" height="20" class="view1"><img src="img/shopping/2p_c1.png" alt="카트" width="20" height="20" class="view2"></p>
+                    </figcaption>
+                </figure>
+            </div>
+            <!--product1-->
+        </div>
+        <!--page2-->
+    </div>
+    <!--page2-->
+
+    <!--*** PAGE3 ***-->
+    <div id="page3">
+        <div class="page3">
+            <div class="txt">
+                <p>REVIEW</p>
+                <p>아로마티카를 직접 사용해보니 어떠셨나요? <br>그 생각을 공유해주세요.</p>
+            </div>
+            <!--txt-->
+            <div id="review">
+                <figure>
+                    <img src="img/shopping/review1.png" alt="로즈 마리 컨센트레이티드 에센스" width="333" height="333">
+                    <figcaption class="txt2">
+                        <h4>바이탈라이징 로즈 마리 컨센트레이티드 에센스</h4>
+                        <p>기존에 사용하던 에센스를 생각하고 발랐는데 묽은 제형의 에센스였어요. 향은 약간 허브향이고 잘 흡수되서 좋았어요. 여름에 가볍게 바르기 좋아요.</p>
+                        <input type="button" class="btn" value="구매하러가기">
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/shopping/review2.png" alt="바이탈라이징 로즈마리 올인원 워시" width="333" height="333">
+                    <figcaption>
+                        <h4>바이탈라이징 로즈마리 올인원 워시</h4>
+                        <p>은은한 장미향에 내용물도 핑크빛이여서 기분이 좋아요. 순하고 거품도 잘 나고 피부가 편안해집니다. 온 가족이 쓰고 있어요.</p>
+                        <input type="button" class="btn" value="구매하러가기">
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/shopping/review3.png" alt="유기농 알로에 베라 젤" width="333" height="333">
+                    <figcaption>
+                        <h4>유기농 알로에 베라 젤 300ml </h4>
+                        <p>늘 쓰는 제품이에요. 몇통째인지 모르겠네요 성분도 좋아서 안심하고 이곳 저곳 많은 곳에 사용중입니다.</p>
+                        <input type="button" class="btn" value="구매하러가기">
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/shopping/review4.png" alt="티트리 밸런싱 토너" width="333" height="333">
+                    <figcaption>
+                        <h4>티트리 밸런싱 토너</h4>
+                        <p>티트리가 잘맞아서 구매했어요. 사용감이 촉촉하고 그렇다고 오일리 하지 않아 제 피부에 좋습니다. 새로 올라온 여드름에도 효과를 봤어요.</p>
+                        <input type="button" class="btn" value="구매하러가기">
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/shopping/review5.png" alt="로즈마리 스칼프 스케일링 샴푸" width="333" height="333">
+                    <figcaption>
+                        <h4>로즈마리 스칼프 스케일링 샴푸 900ml</h4>
+                        <p>항상 이용하는 샴푸에요. 임산부인지라 머리 감는 것도 넘 힘들어서 이틀에 한 번 감는데 <br>머리에 기름이 빨리 안 생겨서 좋아요.</p>
+                        <input type="button" class="btn" value="구매하러가기">
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/shopping/review6.png" alt="오렌지 클렌징 샤베트" width="333" height="333">
+                    <figcaption>
+                        <h4>오렌지 클렌징 샤베트</h4>
+                        <p>퇴근하고 열감으로 마사지 하듯이 클렌징하면 긴장이 좀 풀리는 느낌이 있어서 스트레스완화에 좋았어요</p>
+                        <input type="button" class="btn" value="구매하러가기">
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/shopping/review7.png" alt="티트리 53 블레미쉬 스팟" width="333" height="333">
+                    <figcaption>
+                        <h4>티트리 53 블레미쉬 스팟</h4>
+                        <p>마스크때문에 입주변 뽀류지가 너무 심해져서 구매했어요! 아직 얼마안됐지만 기대하고있습니다</p>
+                        <input type="button" class="btn" value="구매하러가기">
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/shopping/review8.png" alt="퓨어 앤 소프트 여성청결제" width="333" height="333">
+                    <figcaption>
+                        <h4>퓨어 앤 소프트 여성청결제</h4>
+                        <p>생리때는 필수 아이템이 되었어요! 젤형태는 거품이 만들어야하는데 이건 바로 거품형이라 너무 좋아요! 한번 펌핑으로 적당한 양이 나와 좋습니다</p>
+                        <input type="button" class="btn" value="구매하러가기">
+                    </figcaption>
+                </figure>
+
+            </div>
+            <!--review-->
+        </div>
+        <!--.page3-->
+    </div>
+    <!--#page3-->
+
+    <!--****  bottom  ****-->
+    <div id="bottom">
+        <div class="bottom">
+            <div class="bottom_l">
+                <p>AROMATICA</p>
+                <address>COMPANY : (주) 아로마티카 <br>
+                    REPRESENTATIVE : Jerry Kim<br>
+                    ADDRESS : 서울 강남구 도산대로 1길 62 3층 <br>
+                    CORPORATE BISINESS NUMBER : 214-86-75782 [사업자정보확인]<br>
+                    ONLINE BUSINESS NUMBER : 2018-서울강남-00761<br>
+                    © Copyright 아로마티카 All rights reserved. In God we trust.</address>
+            </div>
+            <!--bottom_l-->
+            <div class="bottom_c">
+                <p>CS CENTER</p>
+                <p>070-4206-4214</p>
+                <p>OPEN : AM 09:00 ~ PM 18:00 <br>
+                    BREAK : PM 12:00 ~ PM 13:00 (SAT, SUN, HOLIDAT OFF)</p>
+            </div>
+            <!--bottom_c-->
+            <div class="bottom_r">
+                <p>INSTAGRAM <span>@aromatica.official</span></p>
+                <img src="img/bottom/insta1.png" alt="sns1" width="75" height="75">
+                <img src="img/bottom/insta2.png" alt="sns2" width="75" height="75">
+                <img src="img/bottom/insta3.png" alt="sns3" width="75" height="75"> <br>
+                <img src="img/bottom/insta4.png" alt="sns4" width="75" height="75">
+                <img src="img/bottom/insta5.png" alt="sns5" width="75" height="75">
+                <img src="img/bottom/insta6.png" alt="sns6" width="75" height="75">
+            </div>
+            <!--bottom_r-->
+        </div>
+        <!--bottom..-->
+    </div>
+    <!--bottom-->
+
+
+
+
+
+
+
+
+
+
+</body></html>

@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+@keyframes pro_txt{
+   0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+}
+.quick li a{color: #515151;}/*퀵 버튼 컬러*/
+
+#page1{clear:both; width:100%; height:600px;  position:relative; overflow:hidden;}
+.page1{width:100%; height:600px;  }
+
+.img_wrap{width:100%; height:600px; position:relative; overflow:hidden; }/*메인이미지 전체 */
+.img_wrap figure{width:100%; position:absolute; height:365px;   }
+.img_wrap figure.on{display:block; }
+.img_wrap figure:nth-child(1){left:0; z-index:1;}/*제품 명*/
+.img_wrap figure:nth-child(2){left:0;}/*제품 설명*/
+.img_wrap figure:nth-child(3){left:0;}/*용량/가격*/
+
+.img_wrap figure img{float:left; position:absolute; top:120px; left:500px;}/*제품이미지*/
+.img_wrap figure figcaption{float:right; position:absolute;right:500px; top:130px; }/*메인 텍스트*/
+.img_wrap figure figcaption h2{height:130px;  padding-bottom:30px; font-size:40px; line-height:1.8em;}/*제품명*/
+.img_wrap figure figcaption p:nth-of-type(1){font-size:16px; line-height:1.8em; font-weight:lighter; height:90px;  padding-bottom:40px;}/*제품 성명*/
+.img_wrap figure figcaption p:nth-of-type(2){font-size:14px; word-spacing:55px; background:url(../img/shopping/line.png) no-repeat 100px 5px; padding-bottom:20px;}/*용량/가격*/
+
+#aloe{width:100%; height:680px; background:url(../img/shopping/1p_main1.jpg) no-repeat; }/*알로에*/
+#rose{width:100%; height:680px; background:url(../img/shopping/1p_main2.jpg) no-repeat; }/*로즈*/
+
+.btn_top{width:190px; height:40px; background-color:transparent; border:1px solid #a3a3a3; color:#05535a; font-size:16px; outline:none; cursor:pointer; transition:all 0.3s;}/*버튼*/
+.btn_top:hover{box-shadow:inset 0 0 0 30px #05535a; color:#ffffff; font-weight:bold; letter-spacing:3px;}
+
+#btn_on{position:absolute; bottom:10px; left:50%; transform:translate(-50%,0); width:52px; z-index:20; }
+#btn_on p{float:left; background:url(../img/shopping/btn_off.png) no-repeat left center; width:14px; height:14px; overflow:hidden; margin-left:5px; text-indent:-99px; cursor:pointer; }
+#btn_on p:nth-child(1){margin-left:0; cursor:pointer; }
+#btn_on p.on{background-image:url(../img/shopping/btn_on.png); }
+
+
+
+/****  page2 ****/
+#page2{margin-top:200px; clear:both; }
+.page2{width:80%; margin:0 auto;  }
+
+.nav3{/*width:540px; height:52px; margin:20px auto 150px auto;*/   }
+.nav3 a.selected{color:#05535a; letter-spacing: 5px;  }/*메뉴*/
+.nav3{text-align: center; overflow: hidden; margin: 2em auto; width: 540px; font-weight: bold; position: relative; line-height: 1; font-size: 18px; }/*페이지3 메뉴*/
+.nav3 a{display: block; position: relative; float: left; padding: 1em 0 3.2em; width: 20%; text-decoration: none; color: #908f90; -webkit-transition: .4s; transition: .4s; }
+ .nav3 a:hover { color: #05535a; letter-spacing: 5px;}
+.effect {position: absolute; left: -12.5%; -webkit-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out; }/*도트*/
+.nav3 a:nth-child(1):hover ~ .effect {left: 10%; }
+.nav3 a:nth-child(2):hover ~ .effect {left: 30%; }
+.nav3 a:nth-child(3):hover ~ .effect { left: 50%; }
+.nav3 a:nth-child(4):hover ~ .effect {left: 70%; }
+.nav3 a:nth-child(5):hover ~ .effect {left: 90%; }
+
+.ph-dot-nav::after { content: ""; display: block; position: absolute; width: 100%; height: 1px; background: #05535a; bottom: 40px; }
+.ph-dot-nav a::after { content: ""; position: absolute; width: 4px; height: 4px; bottom: 38px; left: 50%; margin-left: -2px;  background: #05535a; border-radius: 100%; }
+.ph-dot-nav .effect { width: 12px; height: 12px; bottom: 36px; margin-left: -5px; background: #05535a; border-radius: 100%; }/*3페이지 도트*/
+
+/**** product1   *****/
+#product1{clear:both; margin: 0 auto; text-align: center;  }
+#product1 figure{position: relative; float: left; overflow: hidden; max-width:234px; max-height: 390px; text-align: center; box-shadow:0 0 4px #858484; background: #fff; margin:30px 33px;}/*제품1*/
+
+#product1 figure img{position: relative; display: block; opacity: 0.95; -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%;}
+
+#product1 figure figcaption{-webkit-backface-visibility: hidden; backface-visibility: hidden; position: absolute; bottom: 10px; left: 0; width: 234px; height: 100px; line-height:1.5em; margin:0 auto; } /*제품사진*/
+
+#product1 figure span{font-size:11px; color:#05535a; font-weight:normal; } /*제품가격*/
+
+#product1 figure h3{-webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; -webkit-transform: translate3d(0,60px,0); transform: translate3d(0,60px,0); color:#4a4949; font-size:14px; font-weight:bold;}/*제품명*/
+
+#product1 figure figcaption p{opacity: 0; transition: opacity 0.35s, transform 0.35s; -webkit-transition: opacity 0.35s, transform 0.35s; width:60px; height:20px; margin:0 auto; position:absolute; bottom:8px; left:50%; transform:translate(-50%,0); }/*하트,장바구니*/
+#product1 figure figcaption p img{float:left; cursor:pointer; }/*아이콘*/
+#product1 figure figcaption p img:first-child{margin-right:15px;}
+
+#product1 figure:hover img{-webkit-transform: scale3d(0.95,0.95,1); transform: scale3d(0.95,0.95,1);}
+#product1 figure:hover h2{-webkit-transform: translate3d(0,30px,0);
+	transform: translate3d(0,30px,0);}
+#product1 figure:hover p{opacity: 1;}
+
+#product1 figure figcaption:nth-of-type(1) h2{font-size:13px;}
+#product1 figure figcaption:nth-of-type(10) h2{font-size:13px;}
+#product1 figure figcaption:nth-of-type(11) h2{font-size:13px;}
+
+
+/*****  PAGE3   *****/
+#page3{clear:both; margin:100px auto 0 auto; width:80%;  overflow:hidden;}
+.page3{width:1500px; margin:0 auto; padding-top:70px;}
+.txt{text-align:center; margin-bottom:90px; }/*리뷰*/
+.txt p:first-child{color:#05535a; text-decoration:underline; font-size:50px; font-weight:bold; margin-bottom:45px;}/*REVIEW*/
+.txt p:last-child{font-size:16px; line-height:1.7em;}/*아로마티카를...*/
+
+#review{clear:both; overflow:hidden; width:200%; height:900px; }/*리뷰페이지*/
+
+
+
+#review figure{float:left; width:375px; height:650px; text-align:center;  padding-top:30px; position: relative; }
+#review figure img{padding-bottom:45px; cursor:pointer;  }/*리뷰이미지*/
+#review figure figcaption{height:auto;   }
+#review figure figcaption h4{display:block; font-size:16px; margin-bottom:30px;  font-weight:bold; font-size:15px; color: #05535a;  }/*제품명*/
+#review figure figcaption p{font-size:13px; color:#4a4949; line-height: 2em; padding-bottom: 30px; height: auto;   width:300px; margin: 0 auto;  }/*사용후기*/
+
+.btn{width:160px; height:40px; outline:none;  background:#ffffff; color:#05535a; border:2px solid #05535a; margin-top:40px; cursor:pointer; transition:all 0.3s; position: absolute; bottom:70px; left: 50%; transform:translate( -50% ,0);}/*구매하러가기 버튼*/
+#review figure:hover .btn{box-shadow:inset -160px 0 0 0 #05535a,inset 160px 0 0 0 #05535a; color:#ffffff; font-weight:bold;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

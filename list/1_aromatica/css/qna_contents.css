@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+.quick li a {color: #000000;}
+
+#page1{ width:100%; height:625px; border:1px solid transparent;}/*1페이지*/
+.page1{color:#ffffff; text-align:center; background:url(../img/qna/main_back.png) no-repeat; width:100%; height:525px; margin-top:100px;}
+#page1 h2{font-size:40px; font-weight:bold; padding:120px 0 40px 0; }/*070-4206*/
+#page1 p{font-size:20px; line-height:2.2em;}/*점심시간 공휴일...*/
+
+
+#page2{ max-width:1500px; margin:120px auto 0 auto;  height:600px; }/*페이지2*/
+.page2_1{margin: 0 auto; width: 1240px;}
+.page2_1 h3{font-size:52px; font-weight:bold; padding-bottom:140px; text-align:center; }/*QNA*/
+
+.page2_1 div{float:left; margin-bottom:160px; text-align:center;}
+.page2_1 div:nth-of-type(1){width:230px; height:230px; border:1px solid #cfcfcf; margin-right:100px; background:url(../img/qna/2p_icon2.png) no-repeat center 20px;}/*첫번째박스*/
+
+
+.page2_1 div:nth-of-type(2){width:230px; height:230px; border:1px solid #cfcfcf; margin-right:100px; background:url(../img/qna/2p_icon1.png) no-repeat center 20px;}/*첫번째박스*/
+
+
+.page2_1 div:nth-of-type(3){width:230px; height:230px; border:1px solid #cfcfcf; margin-right:100px; background:url(../img/qna/2p_icon3.png) no-repeat center 20px;}/*첫번째박스*/
+
+
+.page2_1 div:nth-of-type(4){width:230px; height:230px; border:1px solid #cfcfcf;  background:url(../img/qna/2p_icon4.png) no-repeat center 20px;}/*첫번째박스*/
+
+
+.page2_1 div:nth-of-type(1) P,
+.page2_1 div:nth-of-type(2) P,
+.page2_1 div:nth-of-type(3) P,
+.page2_1 div:nth-of-type(4) P{padding-top:170px; font-size:12px; line-height:1.5em;}/*박스 전체*/
+
+
+#page3{clear: both; height:550px; max-width:1400px; margin:0 auto 80px auto;   }/*3페이지*/
+.page3 div:first-child{float: left;}
+.page3 div:last-child{float: right;}
+
+#table1{width:600px; height:460px;   } /*테이블 표*/
+
+#table1 h4{ width:200px; height:20px; text-align:center; margin-left:auto; margin-right:auto; margin-bottom:30px; font-size:18px; }/*아로마티카 공지사항*/
+
+#bbs{border-collapse:collapse; width:580px; line-height:2em;  }
+#bbs caption{text-align:right; cursor:pointer; padding-bottom:10px; }
+#bbs thead tr th{border:3px solid #cccccc;  border-right:none; border-left:none; }
+#u_no{width:80px; } /*번호*/
+#u_tit{width:350px;  } /*제목*/
+#u_date{width:180px; } /*등록일*/
+
+
+#bbs th, #bbs td{height:30px; border:1px solid #cccccc; border-right:none; border-left:none;}
+#bbs tbody tr{transition:all 0.2s;}
+#bbs tbody tr:hover{background-color:#eaeaea; cursor:pointer; font-weight:bold; }
+#bbs tbody td{text-align:center;}
+#bbs tbody td.txt{text-align:left; text-indent:25px; } /* 사이즈에 영향 없는 indent */
+
+
+#page3_r{width:750px; height:500px; margin-top: 50px;}/*메신저상담*/
+#page3_r div{width:680px; height:370px; background-color:#f4f4f5;  text-align:center;  }
+
+#page3_r div ul{text-align:center;}
+#page3_r div ul:first-child{padding-top:24px; padding-bottom:24px;}/*실시간 상담*/
+#page3_r div ul:nth-child(2){padding-bottom:20px;}/*아이콘*/
+
+#page3_r div ul:nth-child(1) li{font-size:14px; padding-bottom:14px;}/*실시간 상담*/
+#page3_r div ul:nth-child(2){width:500px;  margin:0 auto;}/*아이콘*/
+#page3_r div ul:nth-child(2) li{display:inline; padding-right:76px; }/*아이콘 이미지*/
+#page3_r div ul:nth-child(2) li:last-child{ padding-right:0; }/*마지막 아이콘 이미지*/
+#page3_r div ul:nth-child(2) li img{transform:scale(0.7);}
+#page3_r div ul:last-child li{font-size:14px; padding-bottom:16px;}
+
+
+
+
+/**** 4PAGE *****/
+#page4{height: 1300px; background-color: #f4f3f2; clear: both;  }
+.page4{width: 1400px; margin: 0 auto; padding-top: 80px; }
+.page4 div{float: left; margin-bottom: 20px; }
+.list2{width:670px; height: 330px; margin-left: 30px; }/*QnA*/
+.list2 h5{font-size: 56px;}/*Qna*/
+.list2 p{font-size: 20px; padding-top: 40px;}/*고객님들이 가장...*/
+.list3{width:330px; height: 330px; background-color: #ffffff; margin-left: 20px; margin-bottom: 20px; cursor: pointer; transition: all 0.3s; }/*게시판 박스*/
+.list3 h6{padding-left: 35px; padding-top: 30px; font-size: 30px; letter-spacing: -4px; margin-bottom: 40px; }/*제품관련*/
+.list3 p{font-size: 16px; padding-left: 30px; line-height: 1.7em;}
+.list3:hover{color:#04575f; box-shadow: 5px 5px 3px #d2d2d2;}
+.list3:hover h6{text-shadow: 2px 2px 0px #eeeeee;}
+
+
+
+
+
+
+
+
+
+

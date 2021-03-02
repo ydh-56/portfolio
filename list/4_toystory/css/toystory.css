@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/*공통*/
+*{box-sizing:border-box;}
+a{color:#333333;}
+body,h1,h2,h3,h4{font:normal 12px/1.5em nanum,sans-serif; color:#333333;}
+body{background-color: #000000;}
+
+/*폰트*/
+@font-face{
+		font-family:nanum;
+		src:url('../font/NanumGothic.eot');
+		src:url('../font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+			url('../font/NanumGothic.ttf')format('truetype'),
+			url('../font/NanumGothic.woff')format('woff');
+}
+
+
+/*1560이상*/
+@media all and ( min-width : 1560px ){
+    
+    .box{overflow:hidden; clear:both; width:1560px; margin:0 auto; }
+    .box::before, .box::after{content:""; display:table; }
+    .box::after{clear:both; }
+    /*.box [class*="list"]:first-child{margin-left:0; }*/
+    
+    .list1, .list2, .list3, .list4, .list5, .list6, .list7, .list8, .list9, .list10, .list11, .list12{float:left; margin-left:10px; margin-right:10px; }
+    
+    .list1{width:110px; }/*(110 x 1) + ( 20 * ( 1 - 1)) */
+    .list2{width:240px; }/*(110 x 2) + ( 20 * ( 2 - 1)) */
+    .list3{width:370px; }
+    .list4{width:500px; }
+    .list5{width:630px; }
+    .list6{width:760px; }
+    .list7{width:890px; }
+    .list8{width:1020px; }
+    .list9{width:1150px; }
+    .list10{width:1280px; }
+    .list11{width:1410px; }
+    .list12{width:1540px; }
+    
+    
+    #top_wrap{clear: both; width: 100%; max-width: 100%; height: 60px; background-color: #000000; margin: 0; padding: 0;    }
+    #top{width: 1200px;  height: 60px; margin: 0 auto;  }
+    #top h1{float: left; }
+    #top ul{padding-left: 250px; float: right; margin-right: 150px; }
+    #top ul li{float: left; width: 130px; height: 60px;  font-size: 20px; color: #ffffff; line-height: 60px; text-transform: uppercase;    }
+    
+    #page2{background: url(../img/p2_back.png) no-repeat; height: 1000px;  margin-bottom: 0;  position: relative; z-index: -10; top: -69px;}
+    .page2{margin: 0 auto;  position:absolute; bottom: 10%; left: 50%; transform: translate(-50%,0);}
+    
+    #page3{background: url(../img/p3_back.png) no-repeat; top:0; left:0; position: relative; height: 1000px; top: -70px; }
+    
+    #page4{height: 700px; padding-top: 150px;}
+    .page4 div{height: 400px; background-color: #ffffff; }
+    .page4 iframe{width: 100%; height: 288px;}
+    .page4 div h4{font-size: 24px; padding-top: 25px; padding-left: 20px; font-weight: bold; }
+    .page4 div p{padding-left: 20px; padding-top: 10px;}
+    
+    .page5{}
+    .page5 div{}
+    .gal1 img:first-child{margin-bottom: 20px;}
+    .gal1 img:last-child{margin-left: 10px;}
+    .gal2 img:first-child{margin-right: 10px;}
+    .gal2 img:last-child{margin-top: 20px;}
+    
+    
+    
+    
+    
+    
+}
+
+/* 768 ~ 1559*/
+@media all and ( min-width:768px) and ( max-width:1559px ){
+        .box{overflow:hidden; width:100%; clear:both;}
+    .list1, .list2, .list3, .list4, .list5, .list6, .list7, .list8, .list9, .list10, .list11, .list12{margin-left:2%; float:left; }
+    .box [class*="list"]:first-child{margin-left:0; }
+    
+    .list1{width:6.5%; }/* (6.5 * 1) + ( 2* ( 1-1 ))   */
+    .list2{width:15%;}/* (6.5 * 2) + ( 2* ( 2-1 ))   */
+    .list3{width:23.5%;}/* (6.5 * 3) + ( 2* ( 3-1 ))   */
+    .list4{width:32%;}/* (6.5 * 4) + ( 2* ( 4-1 ))   */
+    .list5{width:40%;}/* (6.5 * 5) + ( 2* ( 5-1 ))   */
+    .list6{width:49%;}/* (6.5 * 6) + ( 2* ( 6-1 ))   */
+    .list7{width:57.5%;}/* (6.5 * 7) + ( 2* ( 7-1 ))   */
+    .list8{width:66%;}/* (6.5 * 8) + ( 2* ( 8-1 ))   */
+    .list9{width:74.5%;}/* (6.5 * 9) + ( 2* ( 9-1 ))   */
+    .list10{width:83%;}/* (6.5 * 10) + ( 2* ( 10-1 ))   */
+    .list11{width:91.5%;}/* (6.5 * 11) + ( 2* ( 11-1 ))   */
+    .list12{width:100%;}/* (6.5 * 12) + ( 2* ( 12-1 ))   */
+    
+    
+        #top_wrap{clear: both; width: 100%; max-width: 100%; height: 60px; background-color: #000000; margin: 0; padding: 0;    }
+    #top{width: 1200px;  height: 60px; margin: 0 auto;  }
+    #top h1{float: left; }
+    #top ul{padding-left: 250px; float: right; margin-right: 150px; }
+    #top ul li{float: left; width: 130px; height: 60px;  font-size: 20px; color: #ffffff; line-height: 60px; text-transform: uppercase;    }
+    
+    #page2{background: url(../img/p2_back.png) no-repeat; height: 1000px;  margin-bottom: 0;  position: relative; z-index: -10; top: -69px;}
+    .page2{margin: 0 auto;  position:absolute; bottom: 10%; left: 50%; transform: translate(-50%,0); width: 90%;}
+    .page2 img{width: 100%; height: auto;}
+    
+    #page3{background: url(../img/p3_back.png) no-repeat; top:0; left:0; position: relative; height: 1000px; top: -70px; }
+    
+    #page4{height: 700px; padding-top: 150px; width: 90%; margin: 0 auto;}
+    .page4{width: 90%; }
+    .page4 div{/*width: 100%; height: auto; */ background-color: #ffffff; }
+    .page4 div h4{font-size: 24px; padding-top: 25px; padding-left: 20px; font-weight: bold; }
+    .page4 div p{padding-left: 20px; padding-top: 10px;}
+    .page4 div img{width: 100%; height: auto; }
+    .page4 iframe{width: 100%; height: 288px;}
+    
+    .page5{width: 95%; margin: 0 auto;}
+    .page5 div{ }
+    .page div img{width: 100%; height: auto; }
+    .gal1{width: 47.5%;}
+    .gal2{width: 47.5%;}
+    .gal1 img:first-child{margin-bottom:1.7%; width: 100%; height: auto;}
+    .gal1 img:nth-child(2){width: 49%; height: auto;}
+    .gal1 img:last-child{margin-left:1% ; width: 49%; height: auto;}
+    
+    .gal2 img:first-child{margin-right: ; width: 49%; height: auto;}
+    .gal2 img:nth-child(2){width: 49%; height: auto;}
+    .gal2 img:last-child{margin-top: ; width: 100%; height: auto;}
+    
+    
+    
+    
+}
+
+
+/* 767이하 */
+@media all and ( max-width:767px){
+      .box{overflow:hidden; width:100%; clear:both; min-width:320px;  }
+    
+        .list1, .list2, .list3, .list4, .list5, .list6, .list7, .list8, .list9, .list10, .list11, .list12{margin-left:2%; float:left; }
+         .box [class*="list"]:first-child{margin-left:0; }
+    
+
+    .list1{width:6.5%; }
+    .list2{width:15%;}
+    .list3{width:23.5%;}
+    .list4{width:32%;}
+    .list5{width:40%;}
+    .list6{width:49%;}
+    .list7{width:57.5%;}
+    .list8{width:66%;}
+    .list9{width:74.5%;}
+    .list10{width:83%;}
+    .list11{width:91.5%;}
+    .list12{width:100%;}
+    
+    
+         #top_wrap{clear: both; width: 100%; max-width: 100%; height: 60px; background-color: #000000; margin: 0; padding: 0;    }
+    #top{width: 1200px;  height: 60px; margin: 0 auto;  }
+    #top h1{float: left; }
+    #top ul{padding-left: 250px; float: right; margin-right: 150px; }
+    #top ul li{float: left; width: 130px; height: 60px;  font-size: 20px; color: #ffffff; line-height: 60px; text-transform: uppercase;    }
+    
+    #page2{background: url(../img/p2_back.png) no-repeat; height: 1000px;  margin-bottom: 0;  position: relative; z-index: -10; top: -69px;}
+    .page2{margin: 0 auto;  position:absolute; bottom: 10%; left: 50%; transform: translate(-50%,0); width: 90%;}
+    .page2 div{width: 48%; }
+    .page2 div:nth-child(3){margin-left: 0;}
+    .page2 img{width: 100%; height: auto;}
+    .page2 div:nth-child(2){display:;}
+    
+    #page3{background: url(../img/p3_back.png) no-repeat; top:0; left:0; position: relative; height: 1000px; top: -70px; }
+    
+    #page4{height: auto; padding-top: 150px; width: 90%; margin: 0 auto;}
+    .page4{ }
+    .page4 div{/*width: 100%; height: auto; */ background-color: #ffffff; }
+    .page4 div h4{font-size: 24px; padding-top: 25px; padding-left: 20px; font-weight: bold; }
+    .page4 div p{padding-left: 20px; padding-top: 10px;}
+    .page4 div img{width: 100%; height: auto; }
+    .video1, .video2, .video3{width: 100%; margin-bottom: 6%; }
+    
+    .page5{width: 95%; margin: 3% auto 0 auto;}
+    .page5 div{ }
+    .page div img{width: 100%; height: auto; }
+    .gal1{width: 100%;}
+    .gal2{width: 100%;}
+    .gal1 img:first-child{margin-bottom:1.7%; width: 100%; height: auto;}
+    .gal1 img:nth-child(2){width: 49%; height: auto;}
+    .gal1 img:last-child{margin-left:1% ; width: 49%; height: auto;}
+    
+    .gal2 img:first-child{margin-right: ; width: 49%; height: auto;}
+    .gal2 img:nth-child(2){width: 49%; height: auto;}
+    .gal2 img:last-child{margin-top: ; width: 100%; height: auto;}
+   
+    
+    
+    
+    
+    
+    
+    
+    
+}

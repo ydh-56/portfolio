@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Toy Story</title>
+         <!--[if lt IE 9]>
+	<script src=""></script>
+<![endif]-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+     <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/jquery.touchSlider.js"></script>
+    <script src="js/toystory.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/toystory.css">
+        <style>
+        .ts-controls { height: 36px; position: relative; overflow: hidden; margin-bottom:30px;  }
+    .ts-prev { display:none;}
+    .ts-next { display:none; }
+
+    .ts-paging { width:100%; text-align:center; position:absolute; top:12px; left:0; }
+    .ts-paging-btn { display:inline-block; width:10px; height:0; z-index: 5; max-height:10px; padding-top:10px; margin-left:7px; border-radius:20px; border:1px solid #cccccc; background:#3399CC; overflow: hidden; outline:none; }
+    .ts-paging-btn:first-child { margin-left: 0; }
+    .ts-paging-active { background-color:#f5da57; }
+
+    #touchSlider11 {clear:both; width:100%; height:auto; margin:0 auto; position:relative; overflow:hidden; z-index: 5;   }
+    #touchSlider11 ul { position:absolute; top:0; left:0; overflow:hidden; width:100%; height:auto; }
+    #touchSlider11 ul li {width:100%; height:auto; font-size:14px; color:#ffffff; }
+        #touchSlider11 ul li img{width:100%; height:auto; min-height:200px; /*최소 200 유지*/}
+    </style>
+</head>
+<body>
+    <header id="top_wrap">
+       <div id="top">
+        <h1><img src="img/logo.png" alt="toystory" width="218" height="46"></h1>
+        <ul>
+            <li>poster</li>
+            <li>charicter</li>
+            <li>video</li>
+            <li>gallery</li>
+        </ul>
+        </div>
+    </header>
+    
+        <div id="touchSlider11">
+        <ul>
+            <li><img src="img/main1.png" alt="#"></li>
+            <li><img src="img/main2.jpg" alt="#"></li>
+            <li><img src="img/main3.jpg" alt="#"></li>
+        </ul>
+    </div>
+    <script>
+        $('#touchSlider11').touchSlider({
+            autoplay: {
+            speed:4000,
+            enable: true,
+            pauseHover: true,
+            addHoverTarget: '',
+
+            }
+        });
+    </script>
+    
+    <div id="page2">
+        <div class="box page2">
+                <div class="list3"><img src="img/poster1.png" alt="poster" width="320" height="460"></div>
+                <div class="list3"><img src="img/poster2.png" alt="poster" width="320" height="460"></div>
+                <div class="list3"><img src="img/poster3.png" alt="poster" width="320" height="460"></div>
+                <div class="list3"><img src="img/poster4.png" alt="poster" width="320" height="460"></div>
+        </div>
+    </div><!--page2-->
+    
+    <div id="page3">
+        <div class="page3">
+           <div class="p3_back">
+                <img src="img/p3_ch_1.png" alt="background">   
+           </div><!--p3_back-->
+            <div class="p3_1">
+                <a href=""></a>
+            </div><!--p3_1-->
+        </div><!--page3-->
+    </div><!--box-->
+    
+    <div id="page4">
+        <div class="page4 box" >
+            <div class="video1 list4">
+                <iframe width="482" height="288" src="https://www.youtube.com/embed/kMBW_DW7hV0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h4>무한한 추천 예고편</h4>
+                <p>2019.06.21</p>
+            </div><!--video1-->
+            <div class="video2 list4">
+                <iframe width="482" height="288" src="https://www.youtube.com/embed/yfxCnQObR4A" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h4>새로운 모험 예고편</h4>
+                <p>2019.06.07</p>
+            </div><!--video2-->
+            <div class="video3 list4">
+                <iframe width="482" height="288" src="https://www.youtube.com/embed/ak5iuacKYgM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h4>파트너 예고편</h4>
+                <p>2019.05.30</p>
+            </div><!--video3-->
+        </div><!--page4-->
+    </div><!--page4-->
+    
+    <div id="page5">
+        <div class="box page5">
+            <div class="list6 gal1">
+                <img src="img/p5_1.png" alt="갤러리" width="760" height="390">
+                <img src="img/p5_2.png" alt="갤러리" width="370" height="500">
+                <img src="img/p5_3.png" alt="갤러리" width="370" height="500">
+            </div><!--list6-->
+            <div class="list6 gal2">
+                <img src="img/p5_4.png" alt="갤러리" width="360" height="500">
+                <img src="img/p5_5.png" alt="갤러리" width="380" height="500">
+                <img src="img/p5_6.png" alt="갤러리" width="760" height="390">
+            </div><!--list6-->
+        </div>
+    </div>
+</body>
+</html>

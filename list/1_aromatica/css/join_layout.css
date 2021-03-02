@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+@import url("top.css"); /*상단영역*/
+@import url("bottom.css"); /*하단영역*/
+
+/*reset*/
+body{font:normal 14px/1.5em "맑은 고딕","Malgun Gothic",sans-serif; color:#515151;}
+
+
+#wrap{width:100%; height:75%; background:url(../img/join/main_img.png) no-repeat; padding-top:150px; padding-bottom:150px;}/*배경*/
+
+#wrap_join{background:rgba(255,255,255,0.4); width:978px; height:1050px; margin:0  auto; border-radius:10px; padding-bottom:100px;}
+#join{margin-left:42px; padding-top:25px;  }
+#join h2{font-size:32px; margin-bottom:44px; }
+
+#join ul li{padding-bottom:23px; font-size:14px; }
+#join ul li label{ display:block; color:#4a4949; font-size:14px; font-weight:600;}
+
+#u_id, #list1, #pwd1, #pwd2, #name, #num, #num1, #list2, #t_txt1, #t_txt2{outline:none; border:1px solid #c8c7c7; }
+#u_id, #list1, #pwd1, #pwd2, #name, #num, #num1, #list2{border-radius:5px; height:40px; text-indent:1em; }
+#join > ul > li > input::placeholder{font-size:12px; font-weight:lighter; }
+
+
+#u_id{width:432px;  margin-right:12px;  }/*이메일*/
+#list1{margin-left:12px; width:404px; font-weight:lighter;}/*이메일선택*/
+#pwd1, #pwd2, #name{width:882px; }
+#list2{width:250px; margin-right:26px; font-weight:lighter;}/*전화번호*/
+#num, #num1{margin-left:26px; margin-right:26px; width:254px; }
+#t_txt1,#t_txt2{width:884px; height:116px; padding:5px; font-family:"맑은 고딕","Malgun Gothic",sans-serif; font-size:12px; color:#515151; resize:none; }
+
+#t_txt1::-webkit-scrollbar, #t_txt2::-webkit-scrollbar{width:15px;  }
+#t_txt1::-webkit-scrollbar-track, #t_txt2::-webkit-scrollbar-track{background-color:transparent; }
+#t_txt1::-webkit-scrollbar-thumb, #t_txt2::-webkit-scrollbar-thumb{background-color:#1f8891;  }
+
+
+#btn{width:318px; height:70px; margin:20px auto 0 auto; display:block; border:none; background-color:#05535a; color:#ffffff; font-size:30px; font-weight:bold; border-radius:15px; outline:none; cursor:pointer; transition:all 0.5s;}/*회원가*/
+#btn:hover{color:#05535a; background-color:#ffffff; border:4px solid #05535a;}
+
+
+/*label.join_la{color:red; }*/
+#join ul li .join_la{display:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

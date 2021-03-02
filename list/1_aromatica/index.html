@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>아로마티카 (리뉴얼)</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
+    <!--[if lt IE 9]>   
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/top.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index_layout.css">
+
+</head>
+
+<body>
+    <div id="notice">
+    해상도 1920*1080 기준으로 하여 제작하였습니다. &nbsp;
+    본 사이트는 상업적 목적이 아닌
+    개인 포트폴리오 용도로 만들어졌습니다.&nbsp;
+    일부내용과 이미지는
+    저작권이 따로 있음을 알립니다.
+    </div>
+    <!--notice-->
+
+
+    <div class="top_img">
+        <p> Korean Organic Clean Beauty</p>
+        <p>For Earth, our only one precious and small planet.</p>
+        <a href="#" class="view">VIEW</a>
+    </div>
+    <!--top_img 메인 문구-->
+
+    <section class="header">
+        <header id="header">
+            <div id="top0_box">
+                <label for="country" class="coun_h">언어</label>
+                <select id="country">
+                    <option value="KOREA">KOREA</option>
+                    <option value="ENGLISH">ENGLISH</option>
+                    <option value="JAPANESE">JAPANESE</option>
+                    <option value="CHINESE">CHINESE</option>
+                </select>
+            </div>
+            <!--top0_box 언어-->
+
+
+            <div id="top1_box">
+                <div id="top1">
+                    <ul class="quick">
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                        <li><a href="#">장바구니(0)</a></li>
+                    </ul>
+                    <!--quick 메뉴-->
+
+                </div>
+                <!--top1_box-->
+            </div>
+            <!--top1-->
+
+            <div id="top2_box">
+                <h1 class="logo">
+                    <a href="index.html"><img src="img/index/logo.png" alt="aromatica" width="293" height="36"></a>
+                </h1>
+                <div id="top2">
+                    <nav id="top_navi">
+                        <ul id="menu">
+                            <li><a href="skin.html">쇼핑</a>
+                                <ul class="submenu1">
+                                    <li><a href="shopping.html">스킨 케어</a>
+                                        <ul class="submenu2">
+                                            <li><a href="#">클렌저</a></li>
+                                            <li><a href="#">토너 &middot; 세럼</a></li>
+                                            <li><a href="#">수딩젤 &middot; 크림</a></li>
+                                            <li><a href="#">로션 &middot; 크림</a></li>
+                                            <li><a href="#">페이셜오일 &middot; 스팟</a></li>
+                                            <li><a href="#">마스크 &middot; 립</a></li>
+                                            <li><a href="#">썬 &middot; 에프터썬</a></li>
+                                        </ul>
+                                        <!--submenu2-->
+                                    </li>
+                                    <li><a href="#">헤어 케어</a>
+                                        <ul class="submenu2">
+                                            <li><a href="#">샴푸</a></li>
+                                            <li><a href="#">헤어트리트먼트</a></li>
+                                            <li><a href="#">두피토닉 &middot; 스크럽</a></li>
+                                        </ul>
+                                        <!--submenu2-->
+                                    </li>
+                                    <li><a href="#">핸드.바디</a>
+                                        <ul class="submenu2">
+                                            <li><a href="#">바디워시 &middot; 로션</a></li>
+                                            <li><a href="#">바디오일</a></li>
+                                            <li><a href="#">핸드 케어</a></li>
+                                        </ul>
+                                        <!--submenu2-->
+                                    </li>
+                                    <li><a href="#">아로마테라피</a>
+                                        <ul class="submenu2">
+                                            <li><a href="#">에센셜 오일</a></li>
+                                            <li><a href="#">롤온 &middot; 미스트</a></li>
+                                        </ul>
+                                        <!--submenu2-->
+                                    </li>
+                                    <li><a href="#">라이프 케어</a>
+                                        <ul class="submenu2">
+                                            <li><a href="#">치약 &middot; 칫솔 &middot; 펫샴푸</a></li>
+                                            <li><a href="#">주방 세제</a></li>
+                                            <li><a href="#">살균 &middot; 소독제</a></li>
+                                            <li><a href="#">여성청결제</a></li>
+                                        </ul>
+                                        <!--submenu2-->
+                                    </li>
+                                    <li><a href="#">액세서리</a>
+                                        <ul class="submenu2">
+                                            <li><a href="#">브랜드 굿즈</a></li>
+                                            <li><a href="#">뷰티 툴즈</a></li>
+                                        </ul>
+                                        <!--submenu2-->
+                                    </li>
+                                </ul>
+                                <!--submenu1-->
+                            </li>
+                            <li><a href="story.html">스토리</a>
+                                <ul class="submenu1">
+                                    <li><a href="#">브랜드 소개</a></li>
+                                    <li><a href="#">브랜드 스토리</a></li>
+                                    <li><a href="#">브랜드 발자취</a></li>
+                                    <li><a href="#">브랜드 진정성</a></li>
+                                    <li><a href="#">오프라인 매장</a></li>
+                                </ul>
+                                <!--submenu1-->
+                            </li>
+                            <li><a href="mission.html">미션</a>
+                                <ul class="submenu1">
+                                    <li><a href="#">미션</a></li>
+                                    <li><a href="#">지속 가능성</a></li>
+                                    <li><a href="#">선한 영향력</a></li>
+                                    <li><a href="#">클린 뷰티 기준서</a></li>
+                                    <li><a href="#">지속가능 패키지 기준서</a></li>
+                                </ul>
+                                <!--submenu1-->
+                            </li>
+                            <li><a href="qna.html">묻고 답하기</a>
+                                <ul class="submenu1">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">자주 묻는 질문</a></li>
+                                    <li><a href="#">문의</a></li>
+                                    <li><a href="#">제안해 주세요</a></li>
+                                    <li><a href="#">제품 리뷰</a></li>
+                                </ul>
+                                <!--submenu1-->
+                            </li>
+                            <li><a href="aticle.html">아티클</a>
+                                <ul class="submenu1">
+                                    <li><a href="#">지속 가능한 환경</a></li>
+                                    <li><a href="#">지속 가능한 뷰티</a></li>
+                                    <li><a href="#">지속 가능한 원료</a></li>
+                                </ul>
+                                <!--submenu1-->
+                            </li>
+                        </ul>
+                        <!--menu-->
+                    </nav>
+                    <!--nav top2-->
+                </div>
+                <!--top2-->
+            </div>
+            <!--top2_box-->
+        </header>
+        <!--top_wrap-->
+
+    </section>
+    <div id="top_scroll">
+        <p>TOP</p>
+    </div>
+
+    <!--**** page1 ****-->
+
+    <div id="page1"></div>
+    <!--page1-->
+
+    <!--**** page2 ****-->
+    <div id="page2">
+        <div class="page2">
+            <div id="page2_mp4">
+                <video width="640" height="480" autoplay preload="auto" loop muted poster="img/index/video_bg.png">
+                    <source src="video/brand_stroy3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!--page2_mp4-->
+            <div class="page2_txt">
+                <h3>SAVE THE SKIN, <br>SAVE THE PLANET.</h3>
+                <p>우리는 생명과 환경을 지키는 <br>
+                    지속 가능하고 효과적인 제품을 만들고,<br>
+                    지구 환경을 온전한 상태로 되돌리기 위해 <br>
+                    환경 보전과 복원에 적극적으로 나섭니다.</p>
+            </div>
+            <!--page2_txt-->
+        </div>
+        <!--.page2-->
+    </div>
+    <!--page2-->
+
+
+    <!--****  page3  ****-->
+    <div id="page3">
+        <h2>아로마티카의 제품</h2>
+        <div class="page3_over">
+            <div class="page3">
+
+                <div class="p3_box">
+
+                    <figure>
+                        <img src="img/index/3p_pro1.jpg" alt="퓨어 앤 소프트 여성청결제" width="300" height="350">
+                        <figcaption>
+                            <p>퓨어 앤 소프트 여성청결제</p>
+                            <p><b>170ml </b> | <span>15,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro2.jpg" alt="바이탈라이징 로즈마리 올인원 워시" width="300" height="350">
+                        <figcaption>
+                            <p>바이탈라이징 로즈마리 올인원 워시</p>
+                            <p><b>300ml </b> | <span>18,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro3.jpg" alt="컴포팅 칼렌듈라 디콕션 쥬시크림" width="300" height="350">
+                        <figcaption>
+                            <p>컴포팅 칼렌듈라 디콕션 쥬시크림</p>
+                            <p><b>150ml </b> | <span>26,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro4.jpg" alt="내추럴 코코넛 클렌징 오일" width="300" height="350">
+                        <figcaption>
+                            <p>내추럴 코코넛 클렌징 오일</p>
+                            <p><b>300ml </b> | <span>33,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!--p3_box-->
+
+
+                <div class="p3_box">
+                    <figure>
+                        <img src="img/index/3p_pro5.jpg" alt="수딩 알로에 베라 젤" width="300" height="350">
+                        <figcaption>
+                            <p>수딩 알로에 베라 젤</p>
+                            <p><b>300ml </b> | <span>11,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro6.jpg" alt="바이탈라이징 로즈마리 컨센트레이티드 에센스" width="300" height="350">
+                        <figcaption>
+                            <p>바이탈라이징 로즈마리 컨센트레이티드 에센스</p>
+                            <p><b>100ml </b> | <span>38,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro7.jpg" alt="리바이빙 로즈 인퓨전 세럼" width="300" height="350">
+                        <figcaption>
+                            <p>리바이빙 로즈 인퓨전 세럼</p>
+                            <p><b>100ml </b> | <span>35,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro8.jpg" alt="단델리온 페미닌 젤" width="300" height="350">
+                        <figcaption>
+                            <p>단델리온 페미닌 젤</p>
+                            <p><b>250ml </b> | <span>18,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!--p3_box2-->
+
+                <div class="p3_box">
+                    <figure>
+                        <img src="img/index/3p_pro9.jpg" alt="퀴노아 프로틴 트리트먼트 마스크" width="300" height="350">
+                        <figcaption>
+                            <p>퀴노아 프로틴 트리트먼트 마스크 </p>
+                            <p><b>160ml </b> | <span>15,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro10.jpg" alt="로즈마리 스칼프 스케일링 샴푸" width="300" height="350">
+                        <figcaption>
+                            <p>로즈마리 스칼프 스케일링 샴푸</p>
+                            <p><b>900ml </b> | <span>37,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro11.jpg" alt="티트리 퓨리파잉 샴푸" width="300" height="350">
+                        <figcaption>
+                            <p>티트리 퓨리파잉 샴푸</p>
+                            <p><b>900ml </b> | <span>37,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro12.jpg" alt="퀴노아 프로틴 헤어 앰플" width="300" height="350">
+                        <figcaption>
+                            <p>퀴노아 프로틴 헤어 앰플</p>
+                            <p><b>100ml </b> | <span>17,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!--p3_box3-->
+
+                <div class="p3_box">
+                    <figure>
+                        <img src="img/index/3p_pro13.jpg" alt="서렌 바디로션 라벤더&마조람" width="300" height="350">
+                        <figcaption>
+                            <p>서렌 바디로션 라벤더 &amp; 마조람</p>
+                            <p><b>200ml </b> | <span>22,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro14.jpg" alt="티트리 밸런싱 에멀전" width="300" height="350">
+                        <figcaption>
+                            <p>티트리 밸런싱 에멀전</p>
+                            <p><b>100ml </b> | <span>29,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro15.jpg" alt="서렌 바디오일 라벤더 & 마조람" width="300" height="350">
+                        <figcaption>
+                            <p>서렌 바디오일 라벤더 &amp; 마조람</p>
+                            <p><b>100ml </b> | <span>16,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro16.jpg" alt="서렌 아로마테라피 미스트 라벤더 & 마조람" width="300" height="350">
+                        <figcaption>
+                            <p>서렌 아로마테라피 미스트 라벤더 &amp; 마조람</p>
+                            <p><b>300ml </b> | <span>20,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!--p3_box4-->
+
+                <div class="p3_box">
+                    <figure>
+                        <img src="img/index/3p_pro1.jpg" alt="퓨어 앤 소프트 여성청결제" width="300" height="350">
+                        <figcaption>
+                            <p>퓨어 앤 소프트 여성청결제</p>
+                            <p><b>170ml </b> | <span>15,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro2.jpg" alt="바이탈라이징 로즈마리 올인원 워시" width="300" height="350">
+                        <figcaption>
+                            <p>바이탈라이징 로즈마리 올인원 워시</p>
+                            <p><b>300ml </b> | <span>18,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro3.jpg" alt="컴포팅 칼렌듈라 디콕션 쥬시크림" width="300" height="350">
+                        <figcaption>
+                            <p>컴포팅 칼렌듈라 디콕션 쥬시크림</p>
+                            <p><b>150ml </b> | <span>26,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/index/3p_pro4.jpg" alt="내추럴 코코넛 클렌징 오일" width="300" height="350">
+                        <figcaption>
+                            <p>내추럴 코코넛 클렌징 오일</p>
+                            <p><b>300ml </b> | <span>33,000 WON</span> </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!--p3_box-->
+
+            </div>
+            <!--page3..-->
+        </div>
+        <!--page_over-->
+        <p>
+            <!-- 앞 뒤 버튼 -->
+            <button type="button" class="prev">&lt;</button>
+            <!--이전-->
+            <button type="button" class="next">&gt;</button>
+            <!--다음-->
+        </p>
+        <ul id="btn_wrap">
+            <!--이미지 슬라이드 버튼 -->
+            <li><button data-n="1" class="btn btn1 btn5 active">1</button></li>
+            <li><button data-n="2" class="btn btn2">2</button></li>
+            <li><button data-n="3" class="btn btn3">3</button></li>
+            <li><button data-n="4" class="btn btn4">4</button></li>
+        </ul>
+        <!--btn_wrap-->
+
+
+    </div>
+    <!--3page-->
+
+
+    <!--****  page4  ****-->
+    <div id="page4">
+        <div class="page4">
+
+            <figure class="banner4_1">
+                <img src="img/index/4p_img1.png" alt="지속가능한뷰티" width="809" height="524">
+                <figcaption>
+                    <p>#지속가능한뷰티 #지구는내가지켜요</p>
+                    <p>나의 작은 실천이 지속 <br>가능한 환경의 세계로</p>
+                    <p>리필 상품 1개 구매 시 15% OFF / 2개 구매 시 25% OFF</p>
+                </figcaption>
+                <!--con_txt1-->
+            </figure>
+
+            <figure class="banner4_2">
+                <img src="img/index/4p_img1.jpg" alt="알로에 티트리" width="809" height="524">
+                <figcaption>
+                    <p>#겨울왕국인가 #시원보스</p>
+                    <p>알로에&amp;티트리를<br>느끼다</p>
+                    <p>8/4 - 8/17</p>
+                </figcaption>
+                <!--con_txt1-->
+            </figure>
+
+            <figure class="banner4_3">
+                <img src="img/index/4p_img3.jpg" alt="엑소드 오드콜롱" width="809" height="524">
+                <figcaption>
+                    <p>COMING UP</p>
+                    <p>영혼을 유쾌하게 하는 <br> 자연의 향기로 <br>나만의 체취 스타일링</p>
+                    <p>엑소드 3034 오드콜롱 갈바넘 &amp; 자스민 (10/15 출시)</p>
+                </figcaption>
+                <!--con_txt1-->
+            </figure>
+
+            <ul id="btn_wrap1">
+                <li class="on"><a href="#">배너1</a></li>
+                <li><a href="#">배너2</a></li>
+                <li><a href="#">배너3</a></li>
+            </ul>
+            <!--btn_wrap-->
+
+
+
+        </div>
+        <!--page4-->
+    </div>
+    <!--page4-->
+
+
+    <!--****  page5  ****-->
+    <section id="page5">
+
+        <div class="p5-item">
+            <div class="p5-bg" style="background-image: url(img/index/5p_img1.jpg);">.</div>
+            <!--p5-bg-->
+            <div class="p5-text">
+                <p>기획전</p>
+            </div>
+            <!--p5-text-->
+            <div class="p5-content">
+                <p>베스트 <br>신상품<br>세트상품<br>리필 상품</p>
+            </div>
+            <!--p5-content-->
+
+        </div>
+        <!--p5-item-->
+
+        <div class="p5-item">
+            <div class="p5-bg" style="background-image: url(img/index/5p_img2.jpg);">.</div>
+            <!--p5-bg-->
+
+            <div class="p5-text">
+                <p>유형별</p>
+            </div>
+            <!--p5-text-->
+
+            <div class="p5-content">
+                <p>스킨케어 <br>헤어케어<br>핸드, 바디<br>아로마테라피<br>라이프 케어<br>액세서리</p>
+            </div>
+            <!--p5-content-->
+
+        </div>
+        <!--p5-item-->
+
+        <div class="p5-item">
+
+            <div class="p5-bg" style="background-image: url(img/index/5p_img3.jpg);">.</div>
+            <!--p5-bg-->
+            <div class="p5-text">
+                <p>효능별</p>
+            </div>
+            <!--p5-text-->
+
+            <div class="p5-content">
+                <p class="p5-content3">뿌리강화<br> 탈모 증상 완화<br> 자극진정 <br>미세먼지 세정 <br>모발강화 <br>볼륨강화 <br>
+                    극손상케어<br> 애프터 썬 &amp; 진정 <br>과민감 피부<br> 보습 &amp; 미백 <br>안티 블레미쉬<br> 모공정화</p>
+                <!--p5-content3-->
+            </div>
+            <!--p5-content-->
+
+        </div>
+        <!--p5-item-->
+
+        <div class="p5-item">
+
+            <div class="p5-bg" style="background-image: url(img/index/5p_img4.jpg);">.</div>
+            <!--p5-bg-->
+
+            <div class="p5-text">
+                <p>성분별</p>
+            </div>
+            <!--p5-text-->
+
+            <div class="p5-content">
+                <p class="p5-content4">로즈마리 <br>티트리<br> 사이프러스<br> 비오린<br> 퀴노아 <br>알로에 <br>켈렌듈라 <br>
+                    로즈<br> 라벤더 <br>진저 <br>페퍼민트<br> 비다틴 <br>쟈스민<br> 코코넛 <br>시트러스</p>
+                <!--p5-content4-->
+            </div>
+            <!--p5-content-->
+
+        </div>
+        <!--p5-item-->
+    </section>
+    <!--#page5-->
+
+
+    <!--****  bottom  ****-->
+
+    <div id="bottom">
+        <div class="bottom">
+            <div class="bottom_l">
+                <p>AROMATICA</p>
+                <address>COMPANY : (주) 아로마티카 <br>
+                    REPRESENTATIVE : Jerry Kim<br>
+                    ADDRESS : 서울 강남구 도산대로 1길 62 3층 <br>
+                    CORPORATE BISINESS NUMBER : 214-86-75782 [사업자정보확인]<br>
+                    ONLINE BUSINESS NUMBER : 2018-서울강남-00761<br>
+                    © Copyright 아로마티카 All rights reserved. In God we trust.</address>
+            </div>
+            <!--bottom_l-->
+            <div class="bottom_c">
+                <p>CS CENTER</p>
+                <p>070-4206-4214</p>
+                <p>OPEN : AM 09:00 ~ PM 18:00 <br>
+                    BREAK : PM 12:00 ~ PM 13:00 (SAT, SUN, HOLIDAT OFF)</p>
+            </div>
+            <!--bottom_c-->
+            <div class="bottom_r">
+                <p>INSTAGRAM <span>@aromatica.official</span></p>
+                <img src="img/bottom/insta1.png" alt="인스타1" width="75" height="75">
+                <img src="img/bottom/insta2.png" alt="인스타2" width="75" height="75">
+                <img src="img/bottom/insta3.png" alt="인스타3" width="75" height="75"> <br>
+                <img src="img/bottom/insta4.png" alt="인스타4" width="75" height="75">
+                <img src="img/bottom/insta5.png" alt="인스타5" width="75" height="75">
+                <img src="img/bottom/insta6.png" alt="인스타6" width="75" height="75">
+            </div>
+            <!--bottom_r-->
+        </div>
+        <!--bottom..-->
+    </div>
+    <!--bottom-->
+
+</body>
+
+</html>

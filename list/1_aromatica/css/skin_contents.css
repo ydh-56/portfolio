@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+
+/******  PAGE1  ******/
+.quick li a {color: #ffffff;}
+
+#page1{background:url(../img/skin/main_back.png) no-repeat; height:680px; margin-bottom:116px; }
+.page1{float:right; padding-right:290px;}
+#page1 h2{color:#05535a; font-size:60px; font-weight:bold; line-height:1.5em; padding-top:110px; }/*AROMATICA BEST*/
+#page1 p{font-size:16px; padding-top:26px; padding-bottom:20px;}/*아로마티카의 가장...*/
+#btn1{color:#ffffff; border:1px solid #ffffff;     background:none;  font-size:14px; text-align:center;  width:140px; height:42px; margin-left:74px; outline:none; cursor:pointer; transition:all 0.3s; letter-spacing: 3px;}/*VIEW 버튼*/
+
+#btn1:hover, #btn1:focus{color:#ffffff; border:none; font-weight: bold; letter-spacing: 5px; } /*VIEW 버튼 효과*/
+#btn1:hover, #btn1:focus{box-shadow:inset 140px 0 0 0 #05535a;}
+
+
+
+/******  PAGE2  ******/
+
+#page2{max-width:70%; margin:0 auto;  height:684px;  overflow:hidden; }
+.page2 div{float:left; text-align:center; }/*제품 내용 묶음*/
+.page2_1, 
+.page2_2{padding-right:61px;} /*첫번째, 두번째 제품*/
+.page2_1 img,
+.page2_2 img,
+.page2_3 img{cursor:pointer;}/*베스트 제품 이미지*/
+.page2_1 h3,
+.page2_2 h3,
+.page2_3 h3{padding-top:30px; font-size:19px; padding-bottom:25px;  cursor:pointer; display:block;}/*제품 명*/
+.page2_1 p:nth-of-type(1),
+.page2_2 p:nth-of-type(1),
+.page2_3 p:nth-of-type(1){font-size:13px; padding-bottom:20px; }/*제품설명*/
+.page2_1 p:nth-of-type(2),
+.page2_2 p:nth-of-type(2),
+.page2_3 p:nth-of-type(2){padding-bottom:16px; color:#05535a; font-size:15px; font-weight:bold;}/*제품가격*/
+.page2_1 p:nth-of-type(3),
+.page2_2 p:nth-of-type(3),
+.page2_3 p:nth-of-type(3){font-size:11px; text-decoration:underline; cursor:pointer;}/*제품리뷰수*/
+
+
+.page2_1:hover img,
+.page2_2:hover img,
+.page2_3:hover img{box-shadow:0 8px 16px rgba(0,0,0,0.6); transition:all 0.3s ease-in;}/*호버시 박스그림자*/
+.page2_1 img, 
+.page2_2 img, 
+.page2_3 img{transition: 0.3s; box-shadow:0 2px 4px rgba(0,0,0,0.6);}
+
+.page2 div{padding-bottom:40px;}
+
+/******  PAGE3  ******/
+
+#page3{clear:both; max-width:70%; margin:0 auto; height:2000px; }
+
+.nav3 a.selected{color:#05535a; letter-spacing: 5px;  }/*메뉴*/
+.nav3{text-align: center; overflow: hidden; margin: 2em auto; width: 540px; font-weight: bold; position: relative; line-height: 1; font-size: 18px; }/*페이지3 메뉴*/
+.nav3 a{display: block; position: relative; float: left; padding: 1em 0 3.2em; width: 20%; text-decoration: none; color: #908f90;  transition: .4s; }
+.nav3 a:hover { color: #05535a; letter-spacing: 5px;}
+.effect {position: absolute; left: -12.5%;  transition: 0.4s ease-in-out; }/*도트*/
+.nav3 a:nth-child(1):hover ~ .effect {left: 10%; }
+.nav3 a:nth-child(2):hover ~ .effect {left: 30%; }
+.nav3 a:nth-child(3):hover ~ .effect { left: 50%; }
+.nav3 a:nth-child(4):hover ~ .effect {left: 70%; }
+.nav3 a:nth-child(5):hover ~ .effect {left: 90%; }
+
+.ph-dot-nav::after { content: ""; display: block; position: absolute; width: 100%; height: 1px; background: #05535a; bottom: 40px; }
+.ph-dot-nav a::after { content: ""; position: absolute; width: 4px; height: 4px; bottom: 38px; left: 50%; margin-left: -2px;  background: #05535a; border-radius: 100%; }
+.ph-dot-nav .effect { width: 12px; height: 12px; bottom: 36px; margin-left: -5px; background: #05535a; border-radius: 100%; }/*3페이지 도트*/
+
+/*제품 목록*/
+#product{clear:both; width:100%; height:100%;  margin:0 auto; overflow:hidden;}/*제품 목록 전체*/
+#product figure{width:234px; height:316px; float:left; margin:0 10px; cursor:pointer; margin-bottom:100px; background: #f9fafa; position:relative; overflow:hidden; width:234px; height:314px;   }/*제품 묶음*/
+
+#product figure img{ transition:transform 0.35s; position: absolute; bottom: 0; left: 0; backface-visibility:hidden;}/*제품이미지*/
+#product figure h4{transition:transform 0.35s; position: absolute; bottom: 0; left:35px; padding-bottom:10px; }/*제품명*/
+#product figure p{font-size:11px; font-weight:bold;   position:absolute; bottom:25px; left:90px; transition:opacity 0.35s, transform 0.35s; transform:translate3d(0,80px,0);} /*제품 가격*/
+
+#product figure:hover{box-shadow:1px 1px 2.5px rgba(0,0,0,0.4); transition:all 0.3s ease-in;} /*제품묶음 호버*/
+#product figure:hover img{transform: translate3d(0,-25px,0);} /*제품 이미지 호버*/
+#product figure:hover h4{transform: translate3d(0,-30px,0);}/*제품명 호버*/
+#product figure:hover p{ opacity: 1; color:#05535a; transform: translate3d(0,20px,0);}/*제품가격 호버*/
+
+/*제품명 위치*/
+#product figure:nth-child(3) h4{left:34px;}
+#product figure:nth-child(4) h4{left:46px;}
+#product figure:nth-child(5) h4{left:66px;}
+#product figure:nth-child(6) h4{left:77px;}
+#product figure:nth-child(8) h4{left:52px;}
+#product figure:nth-child(10) h4{left:60px;}
+#product figure:nth-child(14) h4{left:78px;}
+#product figure:nth-child(15) h4{left:52px;}
+#product figure:nth-child(18) h4{left:68px;}
+#product figure:nth-child(19) h4{left:53px;}
+#product figure:nth-child(13) h4{left:47px;}
+#product figure:nth-child(9) h4{left:20px;}
+#product figure:nth-child(7) h4{left:22px;}
+
+
+#bottom{width:100%;}
