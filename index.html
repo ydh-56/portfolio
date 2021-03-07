@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/effect.css">
+    <link rel="stylesheet" href="css/animation.css">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/scrolla.jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
@@ -23,16 +24,43 @@
 </head>
 
 <body>
+   <header>
+       <div class="header_wrap">
+           <a href="#" class="menuopen">
+           <span class="top"></span>
+           <span class="mid"></span>
+           <span class="bot"></span>
+       </a>
+       <h1><img src="img/test.png" alt="" width="100px;" height="50px" style="border: 1px solid red;"></h1>
+       </div>
+       <!--menuopen-->
+       <div class="menuwrap">
+          <a href="#" class="close"><img src="img/close.png" alt="닫기">Close</a>
+           <div class="menuwrap_left">
+               <ul class="tit">
+                   <li><a href="#intro"><span><b>INTRO</b></span></a></li>
+                   <li><a href="#myself"><span><b>MYINFO</b></span></a></li>
+                   <li><a href="#myskill"><span><b>SKILL</b></span></a></li>
+                   <li><a href="#mypo1"><span><b>PORTFOLIO1</b></span></a></li>
+                   <li><a href="#mypo2"><span><b>PORTFOLIO2</b></span></a></li>
+                   <li><a href="#contact"><span><b>CONTACT</b></span></a></li>
+               </ul>
+               <div class="follow">
+           <a href="#"><span><b>X</b></span></a>
+           <a href="#"><span><b>O</b></span></a>
+       </div>
+           </div>
+       </div>
+      
+   </header>
     <section id="intro" class="box_page con1" data-n="1">
         <div class="box page1">
         <div class="list12">
-                <div id="p1_txt_l">
+                <div id="p1_txt_l" class="animate" data-animate="motion">
                     <h1>반갑습니다. <br> <span>원활한 </span>퍼블리셔 <br><span>양다현</span> 입니다.</h1>
                 </div>
-                <div id="p1_img">
-                    <img src="img/p1_one.png" alt="one" >
-                </div>
                 <div id="p1_txt_r">
+                   <img src="img/p1_one.png" alt="one" >
                     <h2>: 원활하다</h2>
                     <p>1. 모난 데가 없고 원만하다.</p>
                     <p>2. 거침이 없이 잘 나가는 상태에 있다.</p>
@@ -96,6 +124,10 @@
                             <li>눈이 마주치는 건 며칠밤 내내 꿈속에 나타나</li>
                             <li>밤새 나를 괴롭히는 건 그 많은 빈자리 중에서 하필</li>
                         </ul>
+                        <div class="inner_blog">
+                            <p>* 시작한지 얼마 안되었지만 열심히 기록하고 있어요!</p>
+                            <img src="img_test/blog.PNG" alt="">
+                        </div>
                         </div>
                     </div>
                 </div><!--두번째 탭박스-->               
@@ -109,7 +141,7 @@
             <h3>스킬과 자격증들</h3>
             <div class="p3_box">
                 <div class="school">
-                   <h4><img src="img/school.svg" alt=""> 학교를다녔어요</h4>
+                   <h4><img src="img/school.svg" alt=""> 학교를 다녔어요.</h4>
                     <ul>
                     <li><span>2016-2019</span>한국폴리텍 정수캠버스 시각디자인과 졸업</li>
                     <li><span>2013-2015</span>경기국제통상고등학교 국제홍보디자인과 졸업</li>
@@ -120,7 +152,7 @@
                 <div class="skill">
                     <h4><img src="img/ican.svg" alt=""> 할 수 있어요! </h4>
                     <ul>
-                    <li><img src="img/HTML5_logo_and_wordmark.svg" alt=""></li>
+                    <li><img src="img/HTML5_logo_and_wordmark.svg" alt="" ></li>
                     <li><img src="img/CSS3_logo_and_wordmark.svg" alt=""></li>
                     <li><img src="img/CSS3_logo_and_wordmark.svg" alt=""></li>
                     <li><img src="img/JQuery-Logo.svg" alt=""></li>
@@ -132,7 +164,7 @@
                 </ul>
                 </div>
                 <div class="license">
-                   <h4><img src="img/license.svg" alt=""> 저의 자격증이에요</h4>
+                   <h4><img src="img/license.svg" alt=""> 저의 자격증이에요.</h4>
                     <ul>
                     <li><span>2017.08</span>GTQ 포토샵 1급</li>
                     <li><span>2015.07</span>전자출판기능사</li>
@@ -154,7 +186,8 @@
     </section><!--box_page con-->
     
     <section id="mypo1" class="box_page con4" data-n="4">
-        <div class="box page4">4
+        <div class="box page4">
+
         </div><!--box page-->
     </section><!--box_page con-->
     
@@ -174,7 +207,7 @@
                 </div><!--all_8-->
                 
                 <div class="all_7 all_0">
-                    <a href="list/3_vans/index.html"><img src="img/3page_test.jpg" alt="" class="p5_img">
+                    <a href="list/3_vans/index.html"><img src="img/box_2.png" alt="" class="p5_img">
                         <div class="overlay">
                             <div class="p5_txt">
                                 <p>web site</p>
@@ -184,7 +217,7 @@
                 </div><!--all_7-->
                 
                 <div class="all_6 all_0">
-                    <a href="#ex6-1b" rel="modal:open"><img src="img/3page_test.jpg" alt="" class="p5_img">
+                    <a href="#ex6-1" rel="modal:open"><img src="img/box_6.jpg.png" alt="" class="p5_img">
                         <div class="overlay">
                             <div class="p5_txt">
                                 <p>magazine</p>
@@ -192,36 +225,41 @@
                             </div>
                         </div></a>
                 </div>
-                <div class="modal" id="ex6-1" style="display:none;">
-  <p>첫번째 페이지 <a href="#ex6-2" rel="modal:open">다음페이지</a></p>
-</div>
-
-<div class="modal" id="ex6-2" style="display:none;">
-  <p>두번째 페이지 <a href="#ex6-3" rel="modal:open">다음 페이지</a></p>
-</div>
-<div class="modal" id="ex6-3" style="display:none;">
-  <p>세번째 페이지 <a href="#ex6-4" rel="modal:open">다음 페이지</a></p>
-</div>
-
-<div class="modal" id="ex6-4" style="display:none;">
-  <p>마지막 페이지</p>
-</div>
+                <div class="modal" id="ex6-1" style="display: none;">
+                   <img src="img/magazine_1.png" alt="">
+                    <a href="#ex6-2" rel="modal:open"><img src="img/test.png" alt=""></a>
+                </div><!--첫번째 페이지-->
+                <div class="modal" id="ex6-2" style="display: none;">
+                    <a href="#ex6-1" rel="modal:open"><img src="img/test.png" alt=""></a>
+                    <img src="img/magazine_2.png" alt="">
+                    <a href="#ex6-3" rel="modal:open"><img src="img/test.png" alt=""></a>
+                </div><!--두번째 페이지-->
+                <div class="modal" id="ex6-3" style="display: none;">
+                    <a href="#ex6-2" rel="modal:open"><img src="img/test.png" alt=""></a>
+                    <img src="img/magazine_3.png" alt="">
+                    <a href="#ex6-4" rel="modal:open"><img src="img/test.png" alt=""></a>
+                </div><!--세 번째 페이지-->
+                <div class="modal" id="ex6-4" style="display: none;">
+                    <a href="#ex6-3" rel="modal:open"><img src="img/test.png" alt=""></a>
+                    <img src="img/magazine_4.png" alt="">
+                </div><!--네 번째 페이지-->
+               
                 
                 <div class="all_5 all_0">
-                    <a href="#ex5" rel="modal:open"><img src="img/3page_test.jpg" alt="" class="p5_img">
+                    <a href="#ex5" rel="modal:open"><img src="img/box_5.png" alt="" class="p5_img">
                         <div class="overlay">
                             <div class="p5_txt">
                                 <p>poster</p>
-                                <p>Brand</p>
+                                <p>BUGS</p>
                             </div>
                         </div></a>
                 </div>
                 <div id="ex5" class="modal"><a href="#" rel="modal:close">
-                    <img src="img/project8_1.jpg" alt="">
+                    <img src="img/project11_1.jpg" alt="">
                 </a></div><!--all_4-->
                 
                 <div class="all_4 all_0">
-                    <a href="#ex4" rel="modal:open"><img src="img/3page_test.jpg" alt="" class="p5_img">
+                    <a href="#ex4" rel="modal:open"><img src="img/box_4.png" alt="" class="p5_img">
                         <div class="overlay">
                             <div class="p5_txt">
                                 <p>poster</p>
@@ -257,7 +295,7 @@
                 </div><!--all_2-->
                 
                 <div class="all_1 all_0">
-                    <img src="img/3page_test.jpg" alt="" class="p5_img">
+                    <img src="img/box_6.jpg.png" alt="" class="p5_img">
                     <div class="overlay">
                         <div class="p5_txt">
                             <p></p>
@@ -285,11 +323,11 @@
                 </ul>
                 <ul>
                     <li>open KAKAO</li>
-                    <li><img src="img/p4_kakao.png" alt=""></li>
+                    <li><img src="img/p4_kakao.png" alt="" class="kakao_qr"></li>
                 </ul>
                 <ul>
                     <li>이력서 내려받기</li>
-                    <li><a href="yang_dahyun_resume.hwp" download></a><img src="img/p4_down.png" alt="#" width="50" height="50"></li>
+                    <li><a href="yang_dahyun_resume.hwp" download><img src="img/p4_down.png" alt="#" width="50" height="50"></a></li>
                 </ul>
             </div><!--p6_left-->
             <div class="p6_right">
