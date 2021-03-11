@@ -32,14 +32,14 @@ li{list-style: none;}
 
 /*숨김메뉴*/
 .menuwrap {width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 100; box-sizing: border-box; overflow: hidden; background: #eee; }
-.menuwrap .close {display: inline-block; position: absolute; top: 5px; left: 40px; font-size: 1.6rem;}
+.menuwrap .close {display: inline-block; position: absolute; top: 5px; left: 40px; font-size: 1.6rem; }
 .menuwrap .close img {margin-right: 25px;}
 
-.menuwrap .menuwrap_left {float: left; width: 50%; height: 70%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;  border: 1px solid red; box-sizing: border-box;}
+.menuwrap .menuwrap_left {float: left; width: 50%; height: 70%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;   box-sizing: border-box;  }
 .menuwrap .menuwrap_left .tit {margin-bottom: 50px; letter-spacing: 2px; font-weight: normal;}
 .menuwrap .menuwrap_left li a {font-size: 4.4rem; line-height: 2; }
 .menuwrap .menuwrap_left .follow {}
-.menuwrap .menuwrap_left .follow a{display: inline-block; background:yellow; margin-right: 25px; font-size: 2.4rem; }
+.menuwrap .menuwrap_left .follow a{display: inline-block;  margin-right: 25px; font-size: 2.4rem; }
 .menuwrap .menuwrap_left .follow a span {font-size: 3rem;}
 
 .menuwrap {width: 0; transition: 0s; overflow: hidden; opacity: 0; padding: 0;}
@@ -48,29 +48,32 @@ li{list-style: none;}
 /*header*/
 header {width: 100%; padding: 0 40px; box-sizing: border-box; height: 100px; line-height: 100px; z-index: 100; position: fixed; top: 0;}
 header .menuopen {display: inline-block; position: absolute; top: 30%; transform: translateY(-50%); width: 40px; height: 16px; line-height: 100; }
-header .menuopen span{display: block; width: 100%; height: 1px; background: #fff; position: absolute; top: 0; left: 0; }/*menu_bar*/
+header .menuopen span{display: block; width: 100%; height: 1px; background: #362a52; position: absolute; top: 0; left: 0; }/*menu_bar*/
 header .menuopen span.mid {top: 50%;}
 header .menuopen span.bot {top: 100%;}
 header .header_wrap h1 {float: right; }
 
-@keyframes  slide-up {
-    0%{opacity: 0;}
-    20%{opacity: 0; transform: translateY(10px);}
-}
+
 
 
 #intro{width:100%; height:100%; position:relative; background:#362a52; background-size:cover; overflow:hidden; font-family: gulim;}
-#p1_txt_l{position: absolute; top: 16%; left:25%; transform:translate(-50%,0);  color: #d4c3ed; font-size: 8rem; line-height: 1.5em; animation-name: slide-up; animation-duration: 1.5s;}/*메인 텍스트*/
-#p1_txt_l span{color: #ffffff; }
-#p1_txt_r{position: absolute;  right: 10%; bottom: 8%;  color: #d4c3ed;  line-height: 2;  }
-#p1_txt_r img{margin-bottom: 8%;;}
-#p1_txt_r h2{font-weight: normal; font-size: 5.5rem;  }
-#p1_txt_r p{ font-size: 3rem;  }
+.p1_txt_l{position: absolute; top: 16%; left:25%; transform:translate(-50%,0);  color: #d4c3ed; font-size: 8rem; line-height: 1.5em; }/*메인 텍스트*/
+.p1_txt_l span{color: #ffffff; }
+.p1_txt_r{position: absolute;  right: 10%; bottom: 8%;  color: #d4c3ed;  line-height: 2;  }
+.p1_txt_r img{margin-bottom: 8%;;}
+.p1_txt_r h2{font-weight: normal; font-size: 5.5rem;  }
+.p1_txt_r p{ font-size: 3rem;  }
+    
 
 
 #myself{width:100%; height:100%;  }
 .page2 {width: 80%; margin: 0 auto; padding-top: 130px;}
 
+/*tab box_border_bottom*/
+#myself .page2 .myinfo .tab li a span {display: inline-block; position: relative; padding: 5px 0; box-sizing: border-box; transition: all 0.5s; }
+#myself .page2 .myinfo .tab li a span:after {content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: #a68164; transition: all 0.5s; }
+#myself .page2 .myinfo .tab li a span:hover:after{width: 100%;}
+    
 /* 탭박스 제목 */
 #myself .page2 .myinfo {width: 100%; height: 884px; position: relative;}
 #myself .page2 .myinfo .tab {width: 450px; margin-bottom: 40px; overflow: hidden; position: absolute; right: 20%; }
@@ -80,42 +83,42 @@ header .header_wrap h1 {float: right; }
 #myself .page2 .myinfo .tab li.on {color: #a68164; }
 /* 탭박스 제목 밑줄 */
 #myself .page2 .myinfo .tab li a span {display: inline-block; position: relative; padding: 5px 0; box-sizing: border-box; }
-#myself .page2 .myinfo .tab li a span:after {content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: #a68164; /*transition*/}
+#myself .page2 .myinfo .tab li a span:after {content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: #a68164;  /*transition*/}
 #myself .page2 .myinfo .tab li a span:hover:after {width: 100%; }
 
 /*tabBox*/
 #myself {position: relative; width: 100%; height: 100%;}
 #myself .page2 {position: absolute; width: 80%; height: 90%; top: 50%; left: 50%; transform: translate(-50%,-50%);   }
-#myself .page2 .myinfo {border: 1px solid blue; width: 90%; height: 90%; position: absolute;  top: 50%; left: 50%; transform: translate(-50%,-50%);  }
+#myself .page2 .myinfo { width: 90%; height: 90%; position: absolute;  top: 50%; left: 50%; transform: translate(-50%,-50%);  }
 #myself .page2 .myinfo .tab {position: absolute; left: 60%; top: 2%; }/*메뉴 탭*/
 #myself .page2 .myinfo .tab li { }
 #myself .page2 .myinfo .tab li a span{font-size: 2rem;  }
-#myself .page2 .myinfo .tabBox {width: 90%; height: 85%;   position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);  display: none; padding-top: 3%;  border: 1px solid orange; }
+#myself .page2 .myinfo .tabBox {width: 90%; height: 85%;   position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);  display: none; padding-top: 3%;   }
 #myself .page2 .myinfo .tabBox.on {display: block; }
-#myself .page2 .myinfo .tabBox .info_box { overflow: hidden; width: 100%;}
-#myself .page2 .myinfo .tabBox .info_box .photo {float: left; width: 50%; height: 100%;  display: flex; justify-content: center; align-items: center; padding-top: 8%; padding-bottom: 5%;}/*나의 사진*/
-#myself .page2 .myinfo .tabBox .info_box .photo img {transform: scale(1.4);}
+#myself .page2 .myinfo .tabBox { overflow: hidden; width: 100%;}
+#myself .page2 .myinfo .tabBox .photo {float: left; width: 50%; height: 100%;  display: flex; justify-content: center; align-items: center; padding-top: 8%; padding-bottom: 5%;}/*나의 사진*/
+#myself .page2 .myinfo .tabBox .photo img {transform: scale(1.4);}
 /*나의 정보*/
-#myself .page2 .myinfo .tabBox .info_box .txtinfo {float: right; width: 50%; padding-left: 10%; margin-top: 10px; }
-#myself .page2 .myinfo .tabBox .info_box .txtinfo h3 {font-size: 3rem; margin-bottom: 11%; font-family: gulim;  }
-#myself .page2 .myinfo .tabBox .info_box .txtinfo .inner_intro,
-#myself .page2 .myinfo .tabBox .info_box .txtinfo .inner_info{margin-left: 3%; margin-bottom: 10%;}
-#myself .page2 .myinfo .tabBox .info_box .txtinfo .inner_intro li,
-#myself .page2 .myinfo .tabBox .info_box .txtinfo .inner_info li{margin-bottom: 5%; font-size: 1.8rem; }
-#myself .page2 .myinfo .tabBox .info_box .txtinfo .inner_intro li span,
-#myself .page2 .myinfo .tabBox .info_box .txtinfo .inner_info li span{font-size: 2.2rem; letter-spacing: 2px;  color: #8f7da5; font-weight: bold; }
-#myself .page2 .myinfo .tabBox .info_box .txtinfo .inner_intro li p,
-#myself .page2 .myinfo .tabBox .info_box .txtinfo .inner_info li p{margin-top: 4%; font-size: 2rem; margin-left: 10px; }
+#myself .page2 .myinfo .tabBox .txtinfo {float: right; width: 50%; padding-left: 10%; margin-top: 10px; }
+#myself .page2 .myinfo .tabBox .txtinfo h3 {font-size: 3rem; margin-bottom: 13%; font-family: gulim;  }
+#myself .page2 .myinfo .tabBox .txtinfo .inner_intro,
+#myself .page2 .myinfo .tabBox .txtinfo .inner_info{margin-left: 3%; margin-bottom: 10%;}
+#myself .page2 .myinfo .tabBox .txtinfo .inner_intro li,
+#myself .page2 .myinfo .tabBox .txtinfo .inner_info li{margin-bottom: 5%; font-size: 1.8rem; }
+#myself .page2 .myinfo .tabBox .txtinfo .inner_intro li span,
+#myself .page2 .myinfo .tabBox .txtinfo .inner_info li span{font-size: 2.2rem; letter-spacing: 2px;  color: #8f7da5; font-weight: bold; }
+#myself .page2 .myinfo .tabBox .txtinfo .inner_intro li p,
+#myself .page2 .myinfo .tabBox .txtinfo .inner_info li p{margin-top: 4%; font-size: 2rem; margin-left: 10px; }
 .inner_blog p{margin-bottom: 2%; font-size: 1.2rem;}
 .inner_blog img{width: 90%; height: 50%; }
 
 
 
 #myskill{width:100%; height:100%;  position: relative; background: ;}
-#myskill .page3 {width: 75%;  height: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 1px solid red;}
+#myskill .page3 {width: 75%;  height: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 #myskill .page3 h3 {font-size: 3.5rem; text-align: center; margin-bottom: 4%; font-family: gulim; margin-top: 1.5%;}
 #myskill .page3 .p3_box {display: flex; flex-wrap: wrap; }
-#myskill .page3 .p3_box div{width: 48%; flex: 1 1 40%; margin: 2%; border: 1px solid yellow;  }
+#myskill .page3 .p3_box div{width: 48%; flex: 1 1 40%; margin: 2%;   }
 #myskill .page3 .p3_box div h4 {margin-bottom: 5%; font-size: 2.7rem; line-height: 1.5;}
 #myskill .page3 .p3_box div h4 img {width: 5%; height: 5%; margin-right: 1.5%; margin-bottom: 10px; }
 /*학력사항, 자격증*/
@@ -131,30 +134,71 @@ header .header_wrap h1 {float: right; }
 .skill ul li img, .study ul li img {width: 85%; height: 85%;  }
 .skill ul li:nth-child(4) img{height: 50%; }
 
-#mypo1{width:100%; height:100%; display: flex;}
+#mypo1{width:100%; height:100%; }
+#mypo1 .page4 {width: 85%;  height: 85%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    
+    /*글자갯수만큼 바가 생기기위해 span으로 감쌈*/
+.page4 .page4_box .tab4 { text-align: center; font-size: 2rem; font-weight: bold; line-height: 2;}
+.page4 .page4_box .tab4 li {display: inline-block; width: 33%; height: 100%;  cursor: pointer; }
+.page4 .page4_box .tab4 li a {cursor: pointer; width: 100%; height: 100%;  display: block; }
+.page4 .page4_box .tab4 li a span {display: inline-block; position: relative; padding: 5px 0; box-sizing: border-box;  width: 100%; }
+.page4 .page4_box .tab4 li a span:after {content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: #a68164; transition: all 0.5s;}
+.page4 .page4_box .tab4 li a span:hover:after{width: 100%;}
+    
+/*컨텐ㅊ,*/
+    .page4 .tabbox4 {width: 100%; height: 100%; position: relative;}
+.page4 .tabbox4 .site {width: 100%; height: 100%;}
+.page4 .tabbox4 .site .photo4{width: 100%; position: absolute; left: 0; cursor: pointer;}
+.page4 .tabbox4 .site .photo4 img{}
+.page4 .tabbox4 .site .txtinfo4 { width: 24%; height: 100%; text-align: center; line-height: 3; position: absolute; right: 0; }
+    .page4 .tabbox4 .site .txtinfo4 ul{position:absolute; left: 50%; transform: translateX(-50%); top: 10%; }
+.page4 .tabbox4 .site .txtinfo4 ul li:nth-child(1){ font-size: 2rem; margin-top: 20%; }
+.page4 .tabbox4 .site .txtinfo4 ul li:nth-child(2){font-size: 3.6rem; font-weight: bold; letter-spacing: 3px; cursor: pointer;}
+.page4 .tabbox4 .site .txtinfo4 ul li:nth-child(3){font-size: 1.6rem;}
+.page4 .tabbox4 .site .txtinfo4 ul li:nth-child(4) button{border: 1px solid #eaeaea; background: transparent; width: 150px; height: 50px; margin-top: 50%; cursor: pointer; outline: none;}
 
-
-
+/*.introduce tabBox*/
+.page4 .page4_box .tabbox4 {width: 100%; position: absolute; left: 0; top:8%;  display: none; }
+.page4 .page4_box .tabbox4.on {display: block;}
+.page4 .page4_box .tabbox4 .site {overflow: hidden;width: 100%;}
+.page4 .page4_box .tabbox4 .site .photo4 {float: left; width: 75%; height: 100%;  position: relative;}
+.page4 .page4_box .tabbox4 .site .photo4 img {width: 100%;}
+/* 버튼 */
+.btn_4 { z-index: 2; transition: all 0.3s ease; overflow: hidden; }
+.btn_4:after { position: absolute; content: " "; z-index: -1; top: 0; left: 0; width: 100%; height: 100%; transition: all 0.3s ease; }
+.btn_4:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5), -4px -4px 6px 0 rgba(116, 125, 136, .2), inset -4px -4px 6px 0 rgba(255,255,255,.5), inset 4px 4px 6px 0 rgba(116, 125, 136, .3); color: #fff; }
+  .btn_4:hover:after {
+    -webkit-transform: scale(2) rotate(180deg);
+    transform: scale(2) rotate(180deg);
+    background: #000;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  }
 
 /**** 5PAGE ****/
 #mypo2 { width: 100%; height: 100%; padding-top: 5%; box-sizing: border-box; }
-.page5 { width: 75%; height: 90%; margin: 0 auto; overflow: hidden; border: 1px solid red; }
+.page5 {position: relative; width: 70%; height: 90%; margin: 0 auto; overflow: hidden;  }
 
-.page5 h2 { font-family: gulim; text-align: center; font-weight: bold; font-size: 4rem; margin-bottom: 2%; margin-top: 1%; letter-spacing: 5px; }
-
-.all_wrap { border: 1px solid blue; display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 1.5em; }
+.page5 h2 { font-family: gulim; text-align: center; font-weight: bold; font-size: 4rem; margin-bottom: 5%; margin-top: 1%; letter-spacing: 5px; }
+.all_0 a span{font-size: 16px; }
+.all_0 a{ font-size: 3rem; }
+.all_wrap { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 2em; }
 .all_wrap div { float: left; }
-.all_0 { position: relative; border: 1px solid red; width: 100%; height: 100%; overflow: hidden; }
-
+.all_0 { position: relative;  width: 100%; height: 100%; overflow: hidden; }
 .p5_img { border-radius: 25px;}
-.overlay { position: absolute; bottom: 0; left: 0; right: 0; background-color: burlywood; overflow: hidden; width: 100%; height: 0; transition: all 0.2s ease; }
-.all_0:hover .overlay { height: 100%; border-radius: 25px; }
-    color: #fff;
-.p5_txt { font-size: 2rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
-.p5_txt p {line-height: 2;}
-.p5_txt p:nth-child(1) {font-size: 2rem;}
-.p5_txt p:nth-child(2) {font-size: 3.2rem;letter-spacing: 2px;font-weight: bold;}
+    
+.location-image {line-height: 0; overflow: hidden;}
+.location-image img {filter: blur(0px); transition: filter 0.2s ease-in; transform: scale(1.1); width: 100%; height: 100%;}
+.p5_title { font-size: 1.5em; font-weight: bold; text-decoration: none; z-index: 1; position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: 0; transition: opacity .3s; background: rgba(90,0,10,0.4); color: white; /* position the text in t’ middle*/ display: flex; align-items: center; justify-content: center; }
+.all_0:hover .p5_title { opacity: 1;}
+.all_0:hover .location-image img {filter: blur(2px);}
+.all_0 a {letter-spacing: 2px; }
 
+
+    
 /**** 6PAGE ****/
 #contact{width:100%; height:100%; padding-top: 5%; }
 .page6 {width: 80%; height: 90%; margin: 0 auto;}
@@ -200,7 +244,7 @@ header .header_wrap h1 {float: right; }
 .menuwrap .close {display: inline-block; position: absolute; top: 5px; left: 40px; font-size: 1.6rem;}
 .menuwrap .close img {margin-right: 25px;}
 
-.menuwrap .menuwrap_left {float: left; width: 50%; height: 70%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;  border: 1px solid red; box-sizing: border-box;}
+.menuwrap .menuwrap_left {float: left; width: 50%; height: 70%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;   box-sizing: border-box;}
 .menuwrap .menuwrap_left .tit {margin-bottom: 2%; letter-spacing: 2px; font-weight: normal;}
 .menuwrap .menuwrap_left li a {font-size: 3rem; line-height: 2; }
 .menuwrap .menuwrap_left .follow {}
@@ -211,23 +255,23 @@ header .header_wrap h1 {float: right; }
 .menuwrap.on {width: 100%; left: 0; transition: 0.5s; opacity: 1; padding: 160px 200px 0 450px; }
 
 /*header*/
-header {width: 100%; padding: 0 40px; box-sizing: border-box; height: 100px; line-height: 100px; z-index: 100; position: fixed; top: 0;}
-header .menuopen {display: inline-block; position: absolute; top: 30%; transform: translateY(-50%); width: 40px; height: 16px; line-height: 100; }
-header .menuopen span{display: block; width: 100%; height: 1px; background: #fff; position: absolute; top: 0; left: 0; }/*menu_bar*/
+header {width: 100%; padding: 0 40px; box-sizing: border-box; height: 50px; line-height: 100px; z-index: 100; position: fixed; top: 0; }
+header .menuopen {display: inline-block; position: absolute; top: 30%; transform: translateY(-50%); width: 40px; height: 16px; line-height: 100; margin-top: 0.5%; }
+header .menuopen span{display: block; width: 100%; height: 1px; background: #d4c3ed; position: absolute; top: 0; left: 0; }/*menu_bar*/
 header .menuopen span.mid {top: 50%;}
 header .menuopen span.bot {top: 100%;}
-header .header_wrap h1 {float: right; }
+header .header_wrap h1 { position: absolute; right: 2%; top: 0%;}
 
 
 
 
 #intro{width:100%; height:100%; position:relative; background:#362a52; background-size:cover; overflow:hidden; font-family: gulim;}
-#p1_txt_l{position: absolute; top: 16%; left:25%; transform:translate(-50%,0);  color: #d4c3ed; font-size: 6rem; line-height: 1.5em;}/*메인 텍스트*/
-#p1_txt_l span{color: #ffffff; }
-#p1_txt_r{position: absolute;  right: 12%; bottom: 10%;  color: #d4c3ed;  line-height: 2;  }
-#p1_txt_r img{margin-bottom: 8%;  transform: scale(0.8);}
-#p1_txt_r h2{font-weight: normal; font-size: 3.5rem;  }
-#p1_txt_r p{ font-size: 2rem;  }
+.p1_txt_l{position: absolute; top: 16%; left:25%; transform:translate(-50%,0);  color: #d4c3ed; font-size: 6rem; line-height: 1.5em; }/*메인 텍스트*/
+.p1_txt_l span{color: #ffffff; }
+.p1_txt_r{position: absolute;  right: 12%; bottom: 10%;  color: #d4c3ed;  line-height: 2;  }
+.p1_txt_r img{margin-bottom: 8%;  transform: scale(0.8);}
+.p1_txt_r h2{font-weight: normal; font-size: 3.5rem;  }
+.p1_txt_r p{ font-size: 2rem;  }
 
 
 #myself{width:100%; height:100%;  }
@@ -245,14 +289,16 @@ header .header_wrap h1 {float: right; }
 #myself .page2 .myinfo .tab li a span:after {content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: #a68164; /*transition*/}
 #myself .page2 .myinfo .tab li a span:hover:after {width: 100%; }
 
+
+    
 /*tabBox*/
 #myself {position: relative; width: 100%; height: 100%;}
 #myself .page2 {position: absolute; width: 80%; height: 90%; top: 50%; left: 50%; transform: translate(-50%,-50%);   }
 #myself .page2 .myinfo {border: 1px solid blue; width: 90%; height: 90%; position: absolute;  top: 50%; left: 50%; transform: translate(-50%,-50%);  }
 #myself .page2 .myinfo .tab {position: absolute; left: 60%; top: 2%; }/*메뉴 탭*/
-#myself .page2 .myinfo .tab li { }
-#myself .page2 .myinfo .tab li a span{font-size: 2rem;  }
-#myself .page2 .myinfo .tabBox {width: 90%; height: 85%;   position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);  display: none; padding-top: 3%;  border: 1px solid orange; }
+#myself .page2 .myinfo .tab li {margin-bottom: 50px; }
+#myself .page2 .myinfo .tab li a span{font-size: 2rem; color: #a68164; }
+#myself .page2 .myinfo .tabBox {width: 90%; height: 85%;   position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);  display: none; padding-top: 3%;   }
 #myself .page2 .myinfo .tabBox.on {display: block; }
 #myself .page2 .myinfo .tabBox .info_box { overflow: hidden; width: 100%;}
 #myself .page2 .myinfo .tabBox .info_box .photo {float: left; width: 50%; height: 100%;  display: flex; justify-content: center; align-items: center; padding-top: 5%; padding-bottom: 5%;}/*나의 사진*/
@@ -274,10 +320,10 @@ header .header_wrap h1 {float: right; }
 
 
 #myskill{width:100%; height:100%;  position: relative; background: ;}
-#myskill .page3 {width: 75%;  height: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 1px solid red;}
+#myskill .page3 {width: 75%;  height: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 #myskill .page3 h3 {font-size:2.5rem; text-align: center; margin-bottom: 2.5%; font-family: gulim; margin-top: 1.5%;}
 #myskill .page3 .p3_box {display: flex; flex-wrap: wrap; }
-#myskill .page3 .p3_box div{width: 48%;  flex: 1 1 40%; margin: 0.5%; border: 1px solid yellow;  }
+#myskill .page3 .p3_box div{width: 48%;  flex: 1 1 40%; margin: 0.5%;   }
 #myskill .page3 .p3_box div h4 {margin-bottom: 2%; font-size: 2rem; line-height: 1.5;}
 #myskill .page3 .p3_box div h4 img {width: 5%; height: 5%; margin-right: 1.5%; margin-bottom: 10px; }/*제목 아이콘*/
 /*학력사항, 자격증*/
@@ -293,29 +339,61 @@ header .header_wrap h1 {float: right; }
 .skill ul li img, .study ul li img {width: 60%; height: 60%;  }
 .skill ul li:nth-child(4) img{height: 50%; }
 
-#mypo1{width:100%; height:100%; display: flex;}
+#mypo1{width:100%; height:100%; }
+#mypo1 .page4 {width: 85%;  height: 85%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    
+    /*글자갯수만큼 바가 생기기위해 span으로 감쌈*/
+.page4 .page4_box .tab4 { text-align: center; font-size: 2rem; font-weight: bold; line-height: 2;}
+.page4 .page4_box .tab4 li {display: inline-block; width: 33%; height: 100%;  cursor: pointer; }
+.page4 .page4_box .tab4 li a {cursor: pointer; width: 100%; height: 100%;  display: block; }
+.page4 .page4_box .tab4 li a span {display: inline-block; position: relative; padding: 5px 0; box-sizing: border-box;  width: 100%; }
+.page4 .page4_box .tab4 li a span:after {content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: #a68164; transition: all 0.5s;}
+.page4 .page4_box .tab4 li a span:hover:after{width: 100%;}
+    
+/*컨텐ㅊ,*/
+    .page4 .tabbox4 {width: 100%; height: 90%; margin-top: 1%; position: relative;}
+.page4 .tabbox4 .site {width: 100%; height: 100%;  }
+.page4 .tabbox4 .site .photo4{width: 100%; position: absolute; left: 0;  }
+.page4 .tabbox4 .site .photo4 img{}
+.page4 .tabbox4 .site .txtinfo4 { width: 24%; height: 100%; text-align: center; line-height: 3; position: absolute; right: 0; }
+    .page4 .tabbox4 .site .txtinfo4 ul{position:absolute; left: 50%; transform: translateX(-50%); top: 10%; }
+.page4 .tabbox4 .site .txtinfo4 ul li:nth-child(1){ font-size: 2rem; margin-top: 20%;; }
+.page4 .tabbox4 .site .txtinfo4 ul li:nth-child(2){font-size: 3.6rem; font-weight: bold; letter-spacing: 3px;}
+.page4 .tabbox4 .site .txtinfo4 ul li:nth-child(3){font-size: 1.6rem;}
+.page4 .tabbox4 .site .txtinfo4 ul li:nth-child(4) button{border: 1px solid #eaeaea; background: transparent; width: 150px; height: 50px; margin-top: 50%; cursor: pointer; display: block; outline: none;}
+    .page4 .tabbox4 .site .txtinfo4 ul li:nth-child(4){display: block; cursor: pointer;}
+.txtinfo4 ul li {cursor: pointer; display: block; outline: none;}
+    .txtinfo4 ul li:nth-child(2) {cursor: pointer;}
+    
+/*.introduce tabBox*/
+.page4 .page4_box .tabbox4 {width: 100%; position: absolute; left: 0; top:8%;  display: none; }
+.page4 .page4_box .tabbox4.on {display: block;}
+.page4 .page4_box .tabbox4 .site {overflow: hidden;width: 100%;}
+.page4 .page4_box .tabbox4 .site .photo4 {float: left; width: 75%; height: 100%;  position: relative;}
+.page4 .page4_box .tabbox4 .site .photo4 img {width: 100%;}
 
-
-
-
+    
 /**** 5PAGE ****/
 #mypo2 { width: 100%; height: 100%; padding-top: 5%; box-sizing: border-box; }
-.page5 { width: 75%; height: 90%; margin: 0 auto; overflow: hidden; border: 1px solid red; }
+.page5 {position: relative; width: 70%; height: 90%; margin: 0 auto; overflow: hidden;  }
 
-.page5 h2 { font-family: gulim; text-align: center; font-weight: bold; font-size: 3rem; margin-bottom: 2%; margin-top: 1%; letter-spacing: 5px; display: none;}
-
-.all_wrap { border: 1px solid blue; display: grid; grid-template-columns: repeat(4, 1fr);  }
+.page5 h2 { font-family: gulim; text-align: center; font-weight: bold; font-size: 4rem; margin-bottom: 5%; margin-top: 1%; letter-spacing: 5px; }
+.all_0 a span{font-size: 16px; }
+.all_0 a{ font-size: 3rem; }
+.all_wrap { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 2em; }
 .all_wrap div { float: left; }
-.all_0 { position: relative; border: 1px solid red; width: 100%; height: 100%; overflow: hidden; }
-
-.p5_img { border-radius: 25px; width: 100%; height: 100%;}
-.overlay { position: absolute; bottom: 0; left: 0; right: 0; background-color: burlywood; overflow: hidden; width: 100%; height: 0; transition: all 0.2s ease; }
-.all_0:hover .overlay { height: 100%; border-radius: 25px; }
-    color: #fff;
-.p5_txt { font-size: 2rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
-.p5_txt p {line-height: 2;}
-.p5_txt p:nth-child(1) {font-size: 2rem;}
-.p5_txt p:nth-child(2) {font-size: 3.2rem;letter-spacing: 2px;font-weight: bold;}
+.all_0 { position: relative;  width: 100%; height: 100%; overflow: hidden; }
+.p5_img { border-radius: 25px;}
+    
+.location-image {line-height: 0; overflow: hidden;}
+.location-image img {filter: blur(0px); transition: filter 0.2s ease-in; transform: scale(1.1); width: 100%; height: 100%;}
+.p5_title { font-size: 1.5em; font-weight: bold; text-decoration: none; z-index: 1; position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: 0; transition: opacity .3s; background: rgba(90,0,10,0.4); color: white; /* position the text in t’ middle*/ display: flex; align-items: center; justify-content: center; }
+.all_0:hover .p5_title { opacity: 1;}
+.all_0:hover .location-image img {filter: blur(2px);}
+.all_0 a {letter-spacing: 2px; }
+    .modal{width: 100%; height: auto;  margin-top: 70px; }
+    .modal_img5{width: 90%;}
+    .modal_img6{width: 80%; margin-top: 60px;}
 
 /**** 6PAGE ****/
 #contact{width:100%; height:100%; padding-top: 3%; }
@@ -363,7 +441,7 @@ header .header_wrap h1 {float: right; }
 .menuwrap .close {display: inline-block; position: absolute; top: 0; left: 20px; font-size: 1.6rem;}
 .menuwrap .close img {margin-right: 25px;}
 
-.menuwrap .menuwrap_left {float: left; width: 50%; height: 70%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;  border: 1px solid red; box-sizing: border-box; }
+.menuwrap .menuwrap_left {float: left; width: 50%; height: 70%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;   box-sizing: border-box; }
 .menuwrap .menuwrap_left .tit {margin-bottom: 2%; letter-spacing: 2px; font-weight: normal;}
 .menuwrap .menuwrap_left li a {font-size: 3rem; line-height: 2; }
 .menuwrap .menuwrap_left .follow {}
@@ -375,23 +453,23 @@ header .header_wrap h1 {float: right; }
 
 /*header*/
 header {width: 100%; padding: 0 40px; box-sizing: border-box; height: 50px; line-height: 100px; z-index: 100; position: fixed; top: 0; }
-header .menuopen {display: inline-block; position: absolute; top: 30%; transform: translateY(-50%); width: 40px; height: 16px; line-height: 100; }
-header .menuopen span{display: block; width: 100%; height: 1px; background: #fff; position: absolute; top: 0; left: 0; }/*menu_bar*/
+header .menuopen {display: inline-block; position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 16px; line-height: 100; }
+header .menuopen span{display: block; width: 100%; height: 1px; background: #d4c3ed; position: absolute; top: 0; left: 0; }/*menu_bar*/
 header .menuopen span.mid {top: 50%;}
 header .menuopen span.bot {top: 100%;}
-header .header_wrap h1 {float: right; }
+header .header_wrap h1 {display: none;}
 
 
 
 
 #intro{width:100%; height:100%; position:relative; background:#362a52; background-size:cover; overflow:hidden; font-family: gulim;}
-#p1_txt_l{position: absolute; top: 16%; left:50%; transform:translate(-50%,0); width: 100%; color: #d4c3ed; font-size: 4rem; line-height: 1.5em;}/*메인 텍스트*/
-    #p1_txt_l h1 {text-align: center;}
-#p1_txt_l span{color: #ffffff; }
-#p1_txt_r{position: absolute;  right: 12%; bottom: 10%;  color: #d4c3ed;  line-height: 2;  }
-#p1_txt_r img{margin-bottom: 8%;  width: 80%; height: 80%;}
-#p1_txt_r h2{font-weight: normal; font-size: 3.5rem;  }
-#p1_txt_r p{ font-size: 1.5rem;  }
+.p1_txt_l{position: absolute; top: 16%; left:50%; transform:translate(-50%,0); width: 100%; color: #d4c3ed; font-size: 4rem; line-height: 1.5em;}/*메인 텍스트*/
+    .p1_txt_l h1 {text-align: center;}
+.p1_txt_l span{color: #ffffff; }
+.p1_txt_r{position: absolute;  right: 12%; bottom: 10%;  color: #d4c3ed;  line-height: 2;  }
+.p1_txt_r img{margin-bottom: 8%;  width: 80%; height: 80%;}
+.p1_txt_r h2{font-weight: normal; font-size: 3.5rem;  }
+.p1_txt_r p{ font-size: 1.5rem;  }
 
 
 #myself{width:100%; height:100%;  }
@@ -399,7 +477,7 @@ header .header_wrap h1 {float: right; }
 
 /* 탭박스 제목 */
 #myself .page2 .myinfo {width: 100%; height: 884px; position: relative;}
-#myself .page2 .myinfo .tab { width: 100%; background: yellow; margin-bottom: 40px; overflow: hidden; position: absolute; left: 50%; transform: translateX(-50%); }
+#myself .page2 .myinfo .tab { width: 100%;  margin-bottom: 40px; overflow: hidden; position: absolute; left: 50%; transform: translateX(-50%); }
 #myself .page2 .myinfo .tab li {float: left; width: 50%;  }
 #myself .page2 .myinfo .tab li a {display: block; width: 100%; height: 100%; font-size: 1.6rem; }
 #myself .page2 .myinfo .tab li.on {color: #a68164; }
@@ -411,11 +489,11 @@ header .header_wrap h1 {float: right; }
 /*tabBox*/
 #myself {position: relative; width: 100%; height: 100%;}
 #myself .page2 {position: absolute; width: 95%; height: 90%; top: 50%; left: 50%; transform: translate(-50%,-50%);   }
-#myself .page2 .myinfo {border: 1px solid blue; width: 90%; height: 90%; position: absolute;  top: 50%; left: 50%; transform: translate(-50%,-50%);  }
+#myself .page2 .myinfo { width: 90%; height: 90%; position: absolute;  top: 50%; left: 50%; transform: translate(-50%,-50%);  }
 #myself .page2 .myinfo .tab {position: absolute; left: 60%; top: 2%; }/*메뉴 탭*/
 #myself .page2 .myinfo .tab li { }
 #myself .page2 .myinfo .tab li a span{font-size: 2rem;  }
-#myself .page2 .myinfo .tabBox {width: 90%; height: 85%;   position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);  display: none; padding-top: 3%;  border: 1px solid orange; }
+#myself .page2 .myinfo .tabBox {width: 90%; height: 85%;   position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);  display: none; padding-top: 3%;   }
 #myself .page2 .myinfo .tabBox.on {display: block; }
 #myself .page2 .myinfo .tabBox .info_box { overflow: hidden; width: 100%;}
 #myself .page2 .myinfo .tabBox .info_box .photo {display: none;}/*나의 사진*/
@@ -429,16 +507,17 @@ header .header_wrap h1 {float: right; }
 #myself .page2 .myinfo .tabBox .info_box .txtinfo .inner_info li span{font-size: 1.8rem; letter-spacing: 2px;  color: #8f7da5; font-weight: bold; }
 #myself .page2 .myinfo .tabBox .info_box .txtinfo .inner_intro li p,
 #myself .page2 .myinfo .tabBox .info_box .txtinfo .inner_info li p{margin-top: 4%; font-size: 1.5rem; margin-left: 10px; }
-.inner_blog p{margin-bottom: 2%; font-size: 1rem;}
+.inner_blog { padding-top: 10%;}
+.inner_blog p{margin-bottom: 2%; font-size: 1rem; }
 .inner_blog img{width: 90%; height: 50%; }
 
 
 
 #myskill{width:100%; height:100%;  position: relative; background: ;}
-#myskill .page3 {width: 90%;  height: 85%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 1px solid red;}
+#myskill .page3 {width: 90%;  height: 85%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 #myskill .page3 h3 {font-size:2.5rem; text-align: center; margin-bottom: 2.5%; font-family: gulim; margin-top: 1.5%;}
 #myskill .page3 .p3_box { }
-#myskill .page3 .p3_box div{width: 100%;  flex: 1 1 40%; margin: 0.5%; border: 1px solid yellow;  }
+#myskill .page3 .p3_box div{width: 100%;  flex: 1 1 40%; margin: 0.5%;   }
 #myskill .page3 .p3_box div h4 {margin-bottom: 2%; font-size: 2rem; line-height: 1.5;}
 #myskill .page3 .p3_box div h4 img {width: 5%; height: 5%; margin-right: 1.5%; margin-bottom: 10px; }/*제목 아이콘*/
 /*학력사항, 자격증*/
@@ -454,29 +533,62 @@ header .header_wrap h1 {float: right; }
 .skill ul li img, .study ul li img {width: 70%; height: 70%;  }
 .skill ul li:nth-child(4) img{height: 50%; }
 .study{display: none;}
-#mypo1{width:100%; height:100%; display: flex;}
+    
+    
+#mypo1{width:100%; height:100%; }
+#mypo1 .page4 {width: 95%;  height: 85%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);  }
+    
+    /*글자갯수만큼 바가 생기기위해 span으로 감쌈*/
+.page4 .page4_box .tab4 { text-align: center; font-size: 2rem; font-weight: bold; line-height: 2;}
+.page4 .page4_box .tab4 li {display: inline-block; width: 30%; height: 100%;  cursor: pointer; }
+.page4 .page4_box .tab4 li a {cursor: pointer; width: 100%; height: 100%;  display: block; }
+.page4 .page4_box .tab4 li a span {display: inline-block; position: relative; padding: 5px 0; box-sizing: border-box;  width: 100%; }
+.page4 .page4_box .tab4 li a span:after {content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: #a68164; transition: all 0.5s;}
+.page4 .page4_box .tab4 li a span:hover:after{width: 100%;}
+    
+/*컨텐ㅊ,*/
+    .page4 .tabbox4 { margin: 5% auto 0 auto; position: relative; clear: both; }
+.page4 .tabbox4 .site {width: 100%; height: 100%;  }
+.page4 .tabbox4 .site .photo4{clear: both;  position: absolute; left: 15%; top: 2%;  }
+.page4 .tabbox4 .site .photo4 img{}
+.page4 .tabbox4 .site .txtinfo4 { width: 100%; height: 100%; text-align: center; line-height: 3; position: absolute; top: 100%;  }
+    .page4 .tabbox4 .site .txtinfo4 ul{position:absolute; left: 50%; transform: translateX(-50%); top: 10%; }
+.page4 .tabbox4 .site .txtinfo4 ul li:nth-child(1){ display: none;}
+.page4 .tabbox4 .site .txtinfo4 ul li:nth-child(2){font-size: 2.6rem; font-weight: bold; letter-spacing: 3px;}
+.page4 .tabbox4 .site .txtinfo4 ul li:nth-child(3){display: none;}
+.page4 .tabbox4 .site .txtinfo4 ul li:nth-child(4) button{border: 1px solid #eaeaea; background: transparent; width: 150px; height: 50px; margin-top: 50%; }
 
-
+/*.introduce tabBox*/
+.page4 .page4_box .tabbox4 {width: 100%; position: absolute; left: 0; top:8%;  display: none; }
+.page4 .page4_box .tabbox4.on {display: block;}
+.page4 .page4_box .tabbox4 .site {overflow: hidden;width: 100%;}
+.page4 .page4_box .tabbox4 .site .photo4 {float: left; width: 75%; height: 100%;  position: relative;}
+.page4 .page4_box .tabbox4 .site .photo4 img {width: 100%;}
 
 
 /**** 5PAGE ****/
 #mypo2 { width: 100%; height: 100%; padding-top: 5%; box-sizing: border-box; }
-.page5 { width: 80%; height: 95%; margin: 0 auto; overflow: hidden; border: 1px solid red; }
+.page5 {position: relative; width: 95%; height: 90%; margin: 0 auto; overflow: hidden;  }
 
-.page5 h2 { display: none;}
-
-.all_wrap { border: 1px solid blue; height: 100%; width: 100%; display: grid; grid-template-columns: repeat(2, 1fr);  }
+.page5 h2 { font-family: gulim; text-align: center; font-weight: bold; font-size: 4rem; margin-bottom: 5%; margin-top: 3%; letter-spacing: 5px; }
+.all_0 a span{font-size: 16px; }
+.all_0 a{ font-size: 3rem; }
+.all_wrap {  }
 .all_wrap div { float: left; }
-.all_0 { position: relative; border: 1px solid red; width: 100%; height: 100%; overflow: hidden; }
-
-.p5_img { border-radius: 25px; width: 100%; height: 100%;}
-.overlay { position: absolute; bottom: 0; left: 0; right: 0; background-color: burlywood; overflow: hidden; width: 100%; height: 0; transition: all 0.2s ease; }
-.all_0:hover .overlay { height: 100%; border-radius: 25px; }
-    color: #fff;
-.p5_txt { font-size: 2rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
-.p5_txt p {line-height: 2;}
-.p5_txt p:nth-child(1) {font-size: 2rem;}
-.p5_txt p:nth-child(2) {font-size: 3.2rem;letter-spacing: 2px;font-weight: bold;}
+.all_0 { position: relative;    overflow: hidden; }
+.p5_img { border-radius: 25px;}
+    .all_2,.all_1{display: none;}
+    .all_0{width: 50%; height: 170px !important; }
+    
+.location-image {line-height: 0; overflow: hidden;}
+.location-image img {filter: blur(0px); transition: filter 0.2s ease-in; transform: scale(1.1); width: 100%; height: 50%;}
+.p5_title { font-size: 1.5em; font-weight: bold; text-decoration: none; z-index: 1; position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: 0; transition: opacity .3s; background: rgba(90,0,10,0.4); color: white; /* position the text in t’ middle*/ display: flex; align-items: center; justify-content: center; }
+.all_0:hover .p5_title { opacity: 1;}
+.all_0:hover .location-image img {filter: blur(2px);}
+.all_0 a {letter-spacing: 2px; }
+    .modal{width: 100%; height: auto;  margin-top: 70px; }
+    .modal_img5{width: 90%;}
+    .modal_img6{width: 80%; margin-top: 60px;}
 
 /**** 6PAGE ****/
 #contact{width:100%; height:100%; padding-top: 3%; }

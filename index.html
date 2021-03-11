@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>포트폴리오</title>
@@ -8,10 +9,14 @@
     <link rel="stylesheet" href="css/effect.css">
     <link rel="stylesheet" href="css/animation.css">
     <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
             emailjs.init("user_Lq2Zd7ieQlPduTnPTggU4");
@@ -24,295 +29,372 @@
 </head>
 
 <body>
-   <header>
-       <div class="header_wrap">
-           <a href="#" class="menuopen">
-           <span class="top"></span>
-           <span class="mid"></span>
-           <span class="bot"></span>
-       </a>
-       <h1><img src="img/test.png" alt="" width="100px;" height="50px" style="border: 1px solid red;"></h1>
-       </div>
-       <!--menuopen-->
-       <div class="menuwrap">
-          <a href="#" class="close"><img src="img/close.png" alt="닫기">Close</a>
-           <div class="menuwrap_left">
-               <ul class="tit">
-                   <li><a href="#intro"><span><b>INTRO</b></span></a></li>
-                   <li><a href="#myself"><span><b>MYINFO</b></span></a></li>
-                   <li><a href="#myskill"><span><b>SKILL</b></span></a></li>
-                   <li><a href="#mypo1"><span><b>PORTFOLIO1</b></span></a></li>
-                   <li><a href="#mypo2"><span><b>PORTFOLIO2</b></span></a></li>
-                   <li><a href="#contact"><span><b>CONTACT</b></span></a></li>
-               </ul>
-               <div class="follow">
-           <a href="#"><span><b>X</b></span></a>
-           <a href="#"><span><b>O</b></span></a>
-       </div>
-           </div>
-       </div>
-      
-   </header>
+    <header>
+        <div class="header_wrap">
+            <a href="#" class="menuopen">
+                <span class="top"></span>
+                <span class="mid"></span>
+                <span class="bot"></span>
+            </a>
+            <h1><img src="img/logo.svg" alt="" width="100px;" height="50px" ></h1>
+        </div>
+        <!--menuopen-->
+        <div class="menuwrap">
+            <a href="#" class="close"><img src="img/close.png" alt="닫기">Close</a>
+            <div class="menuwrap_left">
+                <ul class="tit">
+                    <li><a href="#intro"><span><b>INTRO</b></span></a></li>
+                    <li><a href="#myself"><span><b>MYINFO</b></span></a></li>
+                    <li><a href="#myskill"><span><b>SKILL</b></span></a></li>
+                    <li><a href="#mypo1"><span><b>PORTFOLIO1</b></span></a></li>
+                    <li><a href="#mypo2"><span><b>PORTFOLIO2</b></span></a></li>
+                    <li><a href="#contact"><span><b>CONTACT</b></span></a></li>
+                </ul>
+                <div class="follow">
+                    <a href="https://open.kakao.com/o/slIcZjkb" target="_blank"><span><b><img src="img/kakao.svg" alt=""></b></span></a>
+                    <a href="https://allhyun.tistory.com/" target="_blank"><span><b><img src="img/blog.svg" alt=""></b></span></a>
+                </div>
+            </div>
+        </div>
+
+    </header>
     <section id="intro" class="box_page con1" data-n="1">
         <div class="box page1">
-        <div class="list12">
-                <div id="p1_txt_l" class="animate" data-animate="motion">
-                    <h1>반갑습니다. <br> <span>원활한 </span>퍼블리셔 <br><span>양다현</span> 입니다.</h1>
-                </div>
-                <div id="p1_txt_r">
-                   <img src="img/p1_one.png" alt="one" >
-                    <h2>: 원활하다</h2>
-                    <p>1. 모난 데가 없고 원만하다.</p>
-                    <p>2. 거침이 없이 잘 나가는 상태에 있다.</p>
-                </div>
-                
+            <div class="p1_txt_l wow">
+                <h1>반갑습니다. <br> <span>원활한 </span>퍼블리셔 <br><span>양다현</span> 입니다.</h1>
             </div>
-        </div><!--box page-->
-    </section><!--box_page con-->
-    
+            <div class="p1_txt_r wow">
+                <img src="img/p1_one.png" alt="one">
+                <h2>: 원활하다</h2>
+                <p>1. 모난 데가 없고 원만하다.</p>
+                <p>2. 거침이 없이 잘 나가는 상태에 있다.</p>
+            </div>
+
+
+        </div>
+        <!--box page-->
+    </section>
+    <!--box_page con-->
+
     <section id="myself" class="box_page con2" data-n="2">
-        <div class="box page2">
+        <div class="box page2 wow">
             <div class="myinfo">
                 <ul class="tab">
                     <li class="on"><a href="#"><span>나의 정보</span></a></li>
                     <li><a href="#"><span>안녕하세요!</span></a></li>
                 </ul>
                 <div class="tabBox on">
-                    <div class="info_box">
+                    
                         <div class="photo">
                             <img src="img/profile.png" alt="">
                         </div>
-                        <div class="txtinfo inner">
-                            <h3>저는 이런 사람입니다.</h3>
-                        <ul class="inner_intro inner">
-                           <li>
-                                <span>이름 :</span>
-                                <p>양다현</p>
-                            </li>
-                            <li>
-                                <span>생년월일 :</span>
-                                <p>1997.05.06</p>
-                            </li>
-                            <li>
-                                <span>전화번호 :</span>
-                                <p>010-5508-9727</p>
-                            </li>
-                            <li>
-                                <span>주소 :</span>
-                                <p>경기도 부천시 원미구 수도로 206번길 28-26</p>
-                            </li>
-                            <li>
-                                <span>이메일</span>
-                                <p>govl1535@naver.com</p>
-                            </li>
-                        </ul>
+                        <div class="txtinfo inner1">
+                            <h3 class="p2_h">저는 이런 사람입니다.</h3>
+                            <ul class="inner_intro inner1">
+                                <li>
+                                    <span>이름 :</span>
+                                    <p>양다현</p>
+                                </li>
+                                <li>
+                                    <span>생년월일 :</span>
+                                    <p>1997.05.06</p>
+                                </li>
+                                <li>
+                                    <span>전화번호 :</span>
+                                    <p>010-5508-9727</p>
+                                </li>
+                                <li>
+                                    <span>주소 :</span>
+                                    <p>경기도 부천시 원미구 수도로 206번길 28-26</p>
+                                </li>
+                                <li>
+                                    <span>이메일</span>
+                                    <p>govl1535@naver.com</p>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                </div><!--첫번째 탭박스-->
- 
+                    
+                </div>
+                <!--첫번째 탭박스-->
+
                 <div class="tabBox">
-                    <div class="info_box">
+                    
                         <div class="photo">
                             <img src="img/profile.png" alt="">
                         </div>
-                        <div class="txtinfo inner">
-                            <h3>안녕하세요!</h3>
-                        <ul class="inner_info inner">
-                            <li>느낌이 오잖아 떨리고 있잖아 언제까지 눈치만 볼 거니</li>
-                            <li>네 맘을 말해봐 딴청 피우지 말란 말이야 네 맘 가는 그대로</li>
-                            <li>어서 내 손을 잡아 우연히 고개를 돌릴 때 마다</li>
-                            <li>눈이 마주치는 건 며칠밤 내내 꿈속에 나타나</li>
-                            <li>밤새 나를 괴롭히는 건 그 많은 빈자리 중에서 하필</li>
-                        </ul>
-                        <div class="inner_blog">
-                            <p>* 시작한지 얼마 안되었지만 열심히 기록하고 있어요!</p>
-                            <img src="img_test/blog.PNG" alt="">
+                        <div class="txtinfo inner2">
+                            <h3 class="p2_h">안녕하세요!</h3>
+                            <ul class="inner_info inner">
+                                <li>원활한 개발자를 꿈꾸는 양다현입니다.</li>
+                                <li>고등학생부터 배워온 디자인을 표현하기 위해</li>
+                                <li>포트폴리오를 만들면서 자연스레 웹퍼블리셔에</li>
+                                <li>관심을 가지게 되었습니다. 더 능숙한 개발자가 되기 위해</li>
+                                <li>많은 공부를 하고 있으며 발전을 위해 노력하고 있습니다.</li>
+                                <li>멋진 개발자가 되기 까지 노력하고 발전하겠습니다.</li>
+                            </ul>
+                            <div class="inner_blog">
+                                <p>* 시작한지 얼마 안되었지만 열심히 기록하고 있어요!</p>
+                                <a href="https://allhyun.tistory.com/"><img src="img/blog_box.jpg" alt=""></a>
+                            </div>
                         </div>
-                        </div>
-                    </div>
-                </div><!--두번째 탭박스-->               
+                    
+                </div>
+                <!--두번째 탭박스-->
 
             </div>
-        </div><!--box page-->
-    </section> <!--box_page con-->
-    
+        </div>
+        <!--box page-->
+    </section>
+    <!--box_page con-->
+
     <section id="myskill" class="box_page con3" data-n="3">
         <div class="box page3">
-            <h3>스킬과 자격증들</h3>
+            <h3 class="wow">스킬과 자격증들</h3>
             <div class="p3_box">
-                <div class="school">
-                   <h4><img src="img/school.svg" alt=""> 학교를 다녔어요.</h4>
+                <div class="school wow">
+                    <h4><img src="img/school.svg" alt=""> 학교를 다녔어요.</h4>
                     <ul>
-                    <li><span>2016-2019</span>한국폴리텍 정수캠버스 시각디자인과 졸업</li>
-                    <li><span>2013-2015</span>경기국제통상고등학교 국제홍보디자인과 졸업</li>
-                    <li><span>2020</span>이젠 아카데미 UI/UX 과정 수료</li>
-                </ul>
+                        <li><span>2016-2019</span>한국폴리텍 정수캠버스 시각디자인과 졸업</li>
+                        <li><span>2013-2015</span>경기국제통상고등학교 국제홍보디자인과 졸업</li>
+                        <li><span>2020</span>이젠 아카데미 UI/UX 과정 수료</li>
+                    </ul>
                 </div>
-                
-                <div class="skill">
+
+                <div class="skill wow">
                     <h4><img src="img/ican.svg" alt=""> 할 수 있어요! </h4>
                     <ul>
-                    <li><img src="img/HTML5_logo_and_wordmark.svg" alt="" ></li>
-                    <li><img src="img/CSS3_logo_and_wordmark.svg" alt=""></li>
-                    <li><img src="img/CSS3_logo_and_wordmark.svg" alt=""></li>
-                    <li><img src="img/JQuery-Logo.svg" alt=""></li>
-                    <li><img src="img/Octicons-mark-github.svg" alt=""></li>
-                    <li><img src="img/Adobe_Photoshop_CC_icon.svg" alt=""></li>
-                    <li><img src="img/Adobe_Illustrator_CC_icon.svg" alt=""></li>
-                    <li><img src="img/Adobe_XD_CC_icon.svg" alt=""></li>
-                    <li><img src="img/Adobe_InDesign_CC_icon.svg" alt=""></li>
-                </ul>
+                        <li><img src="img/HTML5_logo_and_wordmark.svg" alt=""></li>
+                        <li><img src="img/CSS3_logo_and_wordmark.svg" alt=""></li>
+                        <li><img src="img/Javascript-shield.svg" alt=""></li>
+                        <li><img src="img/JQuery-Logo.svg" alt=""></li>
+                        <li><img src="img/Octicons-mark-github.svg" alt=""></li>
+                        <li><img src="img/Adobe_Photoshop_CC_icon.svg" alt=""></li>
+                        <li><img src="img/Adobe_Illustrator_CC_icon.svg" alt=""></li>
+                        <li><img src="img/Adobe_XD_CC_icon.svg" alt=""></li>
+                        <li><img src="img/Adobe_InDesign_CC_icon.svg" alt=""></li>
+                    </ul>
                 </div>
-                <div class="license">
-                   <h4><img src="img/license.svg" alt=""> 저의 자격증이에요.</h4>
+                <div class="license wow">
+                    <h4><img src="img/license.svg" alt=""> 저의 자격증이에요.</h4>
                     <ul>
-                    <li><span>2017.08</span>GTQ 포토샵 1급</li>
-                    <li><span>2015.07</span>전자출판기능사</li>
-                    <li><span>2015.03</span>ITQ marster</li>
-                </ul>
+                        <li><span>2017.08</span>GTQ 포토샵 1급</li>
+                        <li><span>2015.07</span>전자출판기능사</li>
+                        <li><span>2015.03</span>ITQ marster</li>
+                    </ul>
                 </div>
-                <div class="study">
-                   <h4><img src="img/study.svg" alt=""> 열심히 공부하고 있어요.</h4>
+                <div class="study wow">
+                    <h4><img src="img/study.svg" alt=""> 열심히 공부하고 있어요.</h4>
                     <ul>
-                    <li><img src="img/Unofficial_JavaScript_logo_2.svg" alt=""></li>
-                    <li><img src="img/Node.js_logo.svg" alt=""></li>
-                    <li><img src="img/React.svg" alt=""></li>
-                    
-                    <li><img src="img/clip.png" alt=""></li>
-                </ul>
+                        <li><img src="img/Unofficial_JavaScript_logo_2.svg" alt=""></li>
+                        <li><img src="img/Node.js_logo.svg" alt=""></li>
+                        <li><img src="img/React.svg" alt=""></li>
+
+                        <li><img src="img/Vue.js_Logo_2.svg" alt=""></li>
+                    </ul>
                 </div>
             </div>
-        </div><!--box page-->
-    </section><!--box_page con-->
-    
+        </div>
+        <!--box page-->
+    </section>
+    <!--box_page con-->
+
     <section id="mypo1" class="box_page con4" data-n="4">
         <div class="box page4">
+            <div class="page4_box wow" data-animate="motion">
+                <ul class="tab4">
+                    <li class="on wow"><a href="#"><span>aromatica</span></a></li>
+                    <li class="wow"><a href="#"><span>espior</span></a></li>
+                    <li class="wow"><a href="#"><span>lacuzin</span></a></li>
+                </ul>
+                
+                 <div class="p4_ani wow" data-animate="motion">
+                     <div class="tabbox4 on">
+                        <div class="site">
+                            <div class="photo4">
+                                <a href="list/1_aromatica/index.html" target="_blank"><img src="img/p4_img1.png" alt=""></a>
+                            </div>
+                            <div class="txtinfo4">
+                                <ul>
+                                    <li>web site</li>
+                                    <li><a href="list/1_aromatica/index.html"target="_blank">AROMATICA</a> </li>
+                                    <li>9 page</li>
+                                    <li><a href="list/1_aromatica/index.html"target="_blank"><button class="button_4">VIEW MORE</button></a></li>
+                                </ul>
+                        </div>
+                        <!--site-->
+                    </div>
+                    <!--site-->
+                    </div>
+                    <div class="tabbox4">
+                        <div class="site">
+                            <div class="photo4">
+                                <a href="list/2_espoir/index.html"><img src="img/p4_img2.png" alt=""></a>
+                            </div>
+                            <div class="txtinfo4">
+                                <ul>
+                                    <li>web site</li>
+                                    <li><a href="list/2_espoir/index.html">espoir </a></li>
+                                    <li>reponsive</li>
+                                    <li><a href="list/2_espoir/index.html"><button class="button_4">VIEW MORE</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--site-->
+                    </div>
+                    <div class="tabbox4">
+                        <div class="site">
+                            <div class="photo4">
+                                <a href="list/raquzin/index.html"><img src="img/p3_img3.png" alt=""></a>
+                            </div>
+                            <div class="txtinfo4">
+                                <ul>
+                                    <li>web site</li>
+                                    <li><a href="list/raquzin/index.html">lacuzine</a> </li>
+                                    <li>.</li>
+                                    <li><a href="list/raquzin/index.html"><button class="button_4">VIEW MORE</button></a></li>
+                                </ul>
 
-        </div><!--box page-->
-    </section><!--box_page con-->
-    
+                            </div>
+                        </div>
+                        <!--site-->
+                    </div>
+                 </div> 
+                
+
+            </div>
+        </div>
+        <!--box page-->
+    </section>
+    <!--box_page con-->
+
     <section id="mypo2" class="box_page con5" data-n="5">
         <div class="box page5">
-            <h2>All</h2>
+            <h2 class="wow">All</h2>
             <div class="all_wrap">
-               
-                <div class="all_8 all_0">
-                    <a href="list/5_ck/index.html"><img src="img/3page_test.jpg" alt="" class="p5_img">
-                        <div class="overlay">
-                            <div class="p5_txt">
-                                <p>web site</p>
-                                <p>CK</p>
-                            </div>
-                        </div></a>
-                </div><!--all_8-->
-                
-                <div class="all_7 all_0">
-                    <a href="list/3_vans/index.html"><img src="img/box_2.png" alt="" class="p5_img">
-                        <div class="overlay">
-                            <div class="p5_txt">
-                                <p>web site</p>
-                                <p>VANS</p>
-                            </div>
-                        </div></a>
-                </div><!--all_7-->
-                
-                <div class="all_6 all_0">
-                    <a href="#ex6-1" rel="modal:open"><img src="img/box_6.jpg.png" alt="" class="p5_img">
-                        <div class="overlay">
-                            <div class="p5_txt">
-                                <p>magazine</p>
-                                <p>영화잡지</p>
-                            </div>
-                        </div></a>
+
+                <div class="all_8 all_0  wow">
+                    <a class="p5_title" href="list/3_vans/index.html" target="_blank">CK </a>
+                    <div class="location-image">
+                        <a href="#">
+                            <img src="img/p5_sum.png" class="p5_img"> </a>
+                    </div>
                 </div>
+
+                <div class="all_7 all_0  wow">
+                    <a class="p5_title" href="list/3_vans/index.html" target="_blank">
+                        VANS </a>
+                    <div class="location-image">
+                        <a href="#">
+                            <img src="img/box_2.png" class="p5_img"> </a>
+                    </div>
+                </div>
+                <!--all_7-->
+
+                <div class="all_6 all_0  wow">
+                    <a class="p5_title" href="#ex6-1" rel="modal:open">
+                        MAGAZINE </a>
+                    <div class="location-image">
+                        <a href="#">
+                            <img src="img/box_6.jpg.png" alt="" class="p5_img"> </a>
+                    </div>
+                </div>
+                <!--all_7-->
                 <div class="modal" id="ex6-1" style="display: none;">
-                   <img src="img/magazine_1.png" alt="">
-                    <a href="#ex6-2" rel="modal:open"><img src="img/test.png" alt=""></a>
-                </div><!--첫번째 페이지-->
+                    <img src="img/magazine_1.png" alt="" class="modal_img6">
+                    <a href="#ex6-2" rel="modal:open"><img src="img/arrow-02.svg" alt=""></a>
+                </div>
+                <!--첫번째 페이지-->
                 <div class="modal" id="ex6-2" style="display: none;">
-                    <a href="#ex6-1" rel="modal:open"><img src="img/test.png" alt=""></a>
-                    <img src="img/magazine_2.png" alt="">
-                    <a href="#ex6-3" rel="modal:open"><img src="img/test.png" alt=""></a>
-                </div><!--두번째 페이지-->
+                    <a href="#ex6-1" rel="modal:open"><img src="img/arrow-01.svg" alt=""></a>
+                    <img src="img/magazine_2.png" alt="" class="modal_img6">
+                    <a href="#ex6-3" rel="modal:open"><img src="img/arrow-02.svg" alt=""></a>
+                </div>
+                <!--두번째 페이지-->
                 <div class="modal" id="ex6-3" style="display: none;">
-                    <a href="#ex6-2" rel="modal:open"><img src="img/test.png" alt=""></a>
-                    <img src="img/magazine_3.png" alt="">
-                    <a href="#ex6-4" rel="modal:open"><img src="img/test.png" alt=""></a>
-                </div><!--세 번째 페이지-->
+                    <a href="#ex6-2" rel="modal:open"><img src="img/arrow-01.svg" alt=""></a>
+                    <img src="img/magazine_3.png" alt="" class="modal_img6">
+                    <a href="#ex6-4" rel="modal:open"><img src="img/arrow-02.svg" alt=""></a>
+                </div>
+                <!--세 번째 페이지-->
                 <div class="modal" id="ex6-4" style="display: none;">
-                    <a href="#ex6-3" rel="modal:open"><img src="img/test.png" alt=""></a>
-                    <img src="img/magazine_4.png" alt="">
-                </div><!--네 번째 페이지-->
-               
-                
-                <div class="all_5 all_0">
-                    <a href="#ex5" rel="modal:open"><img src="img/box_5.png" alt="" class="p5_img">
-                        <div class="overlay">
-                            <div class="p5_txt">
-                                <p>poster</p>
-                                <p>BUGS</p>
-                            </div>
-                        </div></a>
+                    <a href="#ex6-3" rel="modal:open"><img src="img/arrow-01.svg" alt=""></a>
+                    <img src="img/magazine_4.png" alt="" class="modal_img6">
+                </div>
+                <!--네 번째 페이지-->
+
+
+                <div class="all_5 all_0  wow">
+                    <a class="p5_title" href="#ex5" rel="modal:open">
+                        S 헬스 </a>
+                    <div class="location-image">
+                        <a href="#">
+                            <img src="img/p5_sum5.png" class="p5_img"> </a>
+                    </div>
                 </div>
                 <div id="ex5" class="modal"><a href="#" rel="modal:close">
-                    <img src="img/project11_1.jpg" alt="">
-                </a></div><!--all_4-->
-                
-                <div class="all_4 all_0">
-                    <a href="#ex4" rel="modal:open"><img src="img/box_4.png" alt="" class="p5_img">
-                        <div class="overlay">
-                            <div class="p5_txt">
-                                <p>poster</p>
-                                <p>Brand</p>
-                            </div>
-                        </div></a>
+                        <img src="img/p5_5.png" alt="" class="modal_img5">
+                    </a></div>
+                <!--all_4-->
+
+                <div class="all_4 all_0  wow">
+                    <a class="p5_title" href="#ex4" rel="modal:open">
+                        POSTER </a>
+                    <div class="location-image">
+                        <a href="#">
+                            <img src="img/box_4.png" class="p5_img"> </a>
+                    </div>
                 </div>
                 <div id="ex4" class="modal"><a href="#" rel="modal:close">
-                    <img src="img/project8_1.jpg" alt="">
-                </a></div><!--all_4-->
-                
-                <div class="all_3 all_0">
-                    <a href="#ex3" rel="modal:open"><img src="img/3page_test.jpg" alt="" class="p5_img">
-                        <div class="overlay">
-                            <div class="p5_txt">
-                                <p>web/mobile</p>
-                                <p>Bugs</p>
-                            </div>
-                        </div></a>
+                        <img src="img/project8_1.jpg" alt="" class="modal_img">
+                    </a></div>
+                <!--all_4-->
+
+                <div class="all_3 all_0  wow">
+                    <a class="p5_title" href="#ex7" rel="modal:open">
+                        BUGS </a>
+                    <div class="location-image">
+                        <a href="#">
+                            <img src="img/box_5.png" class="p5_img"> </a>
+                    </div>
                 </div>
-                <div id="ex3" class="modal"><a href="#" rel="modal:close">
-                    <img src="img/project11_1.jpg" alt="">
-                </a></div><!--all_3-->
-                
-                <div class="all_2 all_0">
-                    <img src="img/3page_test.jpg" alt="" class="p5_img">
-                    <div class="overlay">
-                        <div class="p5_txt">
-                            <p></p>
-                            <p>준비중..</p>
-                        </div>
+                <div id="ex7" class="modal"><a href="#" rel="modal:close">
+                        <img src="img/project11_1.jpg" alt="" class="modal_img">
+                    </a></div>
+                <!--all_4-->
+
+
+
+                <div class="all_2 all_0  wow">
+                    <a class="p5_title">
+                        준비중 </a>
+                    <div class="location-image">
+                        <a href="#">
+                            <img src="img/p5_sum1.png" class="p5_img"> </a>
                     </div>
-                </div><!--all_2-->
-                
-                <div class="all_1 all_0">
-                    <img src="img/box_6.jpg.png" alt="" class="p5_img">
-                    <div class="overlay">
-                        <div class="p5_txt">
-                            <p></p>
-                            <p>준비중..</p>
-                        </div>
+                </div>
+                <!--all_2-->
+
+                <div class="all_1 all_0  wow">
+                    <a class="p5_title">
+                        준비 중 </a>
+                    <div class="location-image">
+                        <a href="#">
+                            <img src="img/p5_sum1.png" class="p5_img"> </a>
                     </div>
-                </div><!--all_1-->
-                
+                </div>
+                <!--all_1-->
+
             </div>
-            
-        </div><!--box page-->
-    </section><!--box_page con-->
-    
+
+        </div>
+        <!--box page-->
+    </section>
+    <!--box_page con-->
+
     <section id="contact" class="box_page con6" data-n="6">
         <div class="box page6">
             <div class="p6_left">
-                <h3>CONTACT.</h3>
+                <h3 class="wow">CONTACT.</h3>
                 <ul>
                     <li>전화번호</li>
                     <li>010-5508-9727</li>
@@ -329,8 +411,9 @@
                     <li>이력서 내려받기</li>
                     <li><a href="yang_dahyun_resume.hwp" download><img src="img/p4_down.png" alt="#" width="50" height="50"></a></li>
                 </ul>
-            </div><!--p6_left-->
-            <div class="p6_right">
+            </div>
+            <!--p6_left-->
+            <div class="p6_right wow">
                 <form id="form_txt">
                     <input type="hidden" name="contact_number">
 
@@ -346,8 +429,11 @@
                     <input type="submit" value="SEND" class="btn_s">
                 </form>
             </div>
-        </div><!--box page-->
-    </section><!--box_page con-->
+        </div>
+        <!--box page-->
+    </section>
+    <!--box_page con-->
 
 </body>
+
 </html>

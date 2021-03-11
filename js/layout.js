@@ -3,13 +3,7 @@ $(document).ready(function(){
 $(document).on('click', 'a[href="#"]', function (e) {
     e.preventDefault();
 });
-    // scroll js
-    $(function() {
-	$('.animate').scrolla({
-		mobile: true, //모바일버전시 활성화
-		once: false //스크롤시 딱 한번만 하고싶을땐 true
-	});    
-      }); 
+
     
     //햄버거버튼
 $(function(){
@@ -19,6 +13,13 @@ $(function(){
     $('.menuwrap .close').on('click', function(){
         $('.menuwrap').removeClass('on');
     });
+});
+
+  // 햄버거 닫기	
+    $(function(){	
+    $('.menuwrap_left .tit li').on('click', function(){	
+        $('.menuwrap').removeClass('on');	
+    });	
 });
 
 window.onload = function () {
@@ -51,6 +52,18 @@ window.onload = function () {
                     } catch (e) {}
                 }
             }
+            $(function(){
+                wow = new WOW(
+                    {
+                    boxClass:     'wow',      // default
+                    animateClass: 'animated', // default
+                    offset:       0,          // default
+                    mobile:       true,       // default
+                    live:         true        // default
+                  }
+                  )
+                  wow.init();
+            });
 
             // 화면 이동 0.8초(800)
             $("html,body").stop().animate({
@@ -59,17 +72,29 @@ window.onload = function () {
                 duration: 500,
                 complete: function () {}
             });
+            
         });
     });
+    
 }
+
+
 
 //탭메뉴
 $(function () {
-    $('#myself .page2 .myinfo .tab li a').on('click', function () {
-        var num = $('#myself .page2 .myinfo .tab li a').index($(this));
+    $('#myself .page2 .myinfo .tab li').on('click', function () {
+        var num = $('#myself .page2 .myinfo .tab li').index($(this));
         $('#myself .page2 .myinfo .tabBox').removeClass('on');
         $('#myself .page2 .myinfo .tabBox:eq(' + num + ')').addClass('on')
     });
+});
+
+   $(function(){	
+   $('#mypo1 .page4 .page4_box .tab4 li').on('click', function(){	
+     var num = $('#mypo1 .page4 .page4_box .tab4 li').index($(this));  	
+       $('#mypo1 .page4 .page4_box  .tabbox4').removeClass('on');	
+       $('#mypo1 .page4 .page4_box  .tabbox4:eq('+num+')').addClass('on')	
+   });	
 });
 
 // 모달팝업

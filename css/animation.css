@@ -1,4 +1,96 @@
+@keyframes textAni {
+    0% {opacity: 0;}
+    40% {opacity: 0; transform: translateY(100px);}
+}
+
+@keyframes trans {
+    0% {opacity: 0; transform: translateY(15px);}
+    30% {opacity: 1; transform: translateY(0);}
+    70% {opacity: 1; transform: translateY(0);}
+    100% {opacity: 0; transform: translateY(-15px);}
+}
+
+@keyframes opa {
+    0%{opacity: 0;}
+}
+
 @keyframes  slide-up {
     0%{opacity: 0;}
-    20%{opacity: 0; transform: translateY(10px);}
+    40%{opacity: 0; transform: translateY(20px);}
 }
+
+@keyframes scaleani {
+    0%{transform: scale(1.11); margin-bottom: 10px;}
+    30%{transform: scale(1); margin-bottom: 0;}
+} 
+
+@keyframes slide-up2 {
+     0%{opacity: 0;}
+    20%{opacity: 0; transform: translateY(40px);}
+}
+@keyframes flash {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: 0;}
+  }
+  @keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {transform: translateX(10px);}
+  }
+  @keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px);}
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInUp {
+    0% {opacity: 0;transform: translateY(20px);}
+    100% {opacity: 1;transform: translateY(0);}
+  }
+  @keyframes fadeInLeft {
+    0% { opacity: 0; transform: translateX(-300px); }
+    50% { opacity: 1; transform: translateX(0); }
+  }
+
+
+/*페이지1*/
+.page1 .p1_txt_l h1 {animation-name: fadeInUp; animation-duration: 1s;}
+.page1 .p1_txt_r {animation-name: slide-up2; animation-duration: 1.8s;  }
+
+
+/* 페이지 2 */
+/*.tab li span {animation-name: slide-up; animation-duration: 1.2s;}*/
+/*.txtinfo h3 {animation-name: slide-up2; animation-duration: 1s;}
+.photo img {animation-name: scaleani; transition: all 0.3s; animation-duration: 2s; }*/
+.page2 h3 {animation-name: slide-up2; animation-duration: 1s;}
+
+
+/* 페이지 3 */
+.page3 h3 {animation-name: slide-up2; animation-duration: 1.3s;}
+.school {animation-name: slide-up; animation-duration: 1.6s; }
+.skill {animation-name: slide-up; animation-duration: 1.6s; }
+.license {animation-name: slide-up; animation-duration: 1.6s; }
+.study {animation-name: slide-up; animation-duration: 1.6s; }
+
+/* 페이지 3 */
+.page4_box .tab4 li:nth-child(1){animation-name: fadeInDown; animation-duration: 0.8s;}
+.page4_box .tab4 li:nth-child(2){animation-name: fadeInDown; animation-duration: 1.4s;}
+.page4_box .tab4 li:nth-child(3){animation-name: fadeInDown; animation-duration: 2s;}
+
+
+.box_page .page4 .page4_box .p4_ani .tabbox4 .site .photo4 {animation-name: fadeInLeft; animation-duration: 1.6s; }
+.box_page .page4 .page4_box .p4_ani .tabbox4 .site .txtinfo4 {animation-name: slide-up2; animation-duration: 2s;}
+
+
+/* 페이지 5 */
+.page5 h2 {animation-name: slide-up2; animation-duration: 1s;}
+.all_wrap .all_8 { animation-name: slide-up; animation-duration: 1.1s;  }
+.all_wrap .all_7 { animation-name: slide-up; animation-duration: 1.2s;  }
+.all_wrap .all_6 { animation-name: slide-up; animation-duration: 1.3s;  }
+.all_wrap .all_5 { animation-name: slide-up; animation-duration: 1.4s;  }
+.all_wrap .all_4 { animation-name: slide-up; animation-duration: 1.5s;  }
+.all_wrap .all_3 { animation-name: slide-up; animation-duration: 1.6s;  }
+.all_wrap .all_2 { animation-name: slide-up; animation-duration: 1.7s;  }
+.all_wrap .all_1 { animation-name: slide-up; animation-duration: 1.8s;  }
+
+/* 페이지 6 */
+.p6_left h3 { animation-name: fadeInLeft; animation-duration: 2s;  }
+.p6_right {animation-name: slide-up2; animation-duration: 1.6s;}
